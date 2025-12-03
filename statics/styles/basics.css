@@ -1,6 +1,14 @@
 /* Root */
-:root{
-    --clr-Deep-Plum:#5C2A4A;
+:root {
+  --clr-white: #fff;
+  --clr-black: #4d3b3b;
+  --clr-Deep-Plum: #5c2a4a;
+  --clr-Cream-White: #fff8f6;
+  --clr-gray: #f5f4f4;
+  --clr-Mauve-Mist: #d7c0d0;
+  --clr-Dusty-Pink: #e7a6b5;
+
+  --transition: all 0.5s ease-in-out;
 }
 
 /* Default font */
@@ -10,22 +18,22 @@
 }
 
 /* Default settings */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Nunito;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
 }
 
 /*Elements default style*/
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 /* Desktop and tablet Design */
-.container{
-    padding: 2rem 5rem;
+.container {
+  padding: 2rem 5rem;
 }
