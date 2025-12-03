@@ -1,0 +1,20 @@
+/* Header Section*/
+/* Top header Section */
+.container .header .top_header{
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo Section */
+.container .header .top_header .logo{
+    display: flex;
+    align-items: center;
+}
+/* Logo Image */
+.container .header .top_header .logo img{
+    width: 8%;
+    margin-right: 0.5rem;
+}
+/* Logo title */
+.container .header .top_header .logo h1{
+    color:var(--clr-Deep-Plum);
+}
