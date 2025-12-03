@@ -106,6 +106,15 @@
   color: var(--clr-Deep-Plum);
   font-size: 1rem;
 }
+.header .navigation .navigation_bar li:not(:first-child):hover a {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* Category in navbar */
 .header .navigation .navigation_bar li:first-child {
   padding: 0.5rem 4rem 0.5rem 1rem;
   background-color: var(--clr-Mauve-Mist);
@@ -126,14 +135,6 @@
 }
 .header .navigation .navigation_bar li:first-child:hover a {
   color: var(--clr-white);
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-}
-.header .navigation .navigation_bar li:not(:first-child):hover a {
-  color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
