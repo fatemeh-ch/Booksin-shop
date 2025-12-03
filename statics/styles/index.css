@@ -142,3 +142,43 @@
   -o-transition: var(--transition);
 }
 /* End of Navigation bar */
+
+/* Slider */
+.slider{
+  height: 30rem;
+  background-image: url(../images/slider.jpg);
+  background-position: center;
+  background-color: var(--clr-black);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Shop now button */
+.slider .shop_now{
+  height: 3rem;
+  border: none;
+  background-color: var(--clr-Mauve-Mist);
+  color:#000;
+  padding: 0 3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.slider .shop_now:hover{
+  background-color: var(--clr-Dusty-Pink);
+  color: var(--clr-white);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+body{
+  height: 2000px;
+}
