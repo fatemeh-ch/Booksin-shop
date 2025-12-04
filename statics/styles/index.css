@@ -215,6 +215,14 @@
   align-items: center;
   gap: 1rem;
 }
+.category .category_item:hover a p{
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
 .category .category_item img {
   width: 8rem;
   height: 10rem;
@@ -228,7 +236,7 @@
 
 /* Best sells */
 .best_sells {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 /* Best sells Title */
 .best_sells .best_sells_title {
