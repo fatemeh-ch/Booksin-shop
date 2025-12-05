@@ -215,7 +215,7 @@
   align-items: center;
   gap: 1rem;
 }
-.category .category_item:hover a p{
+.category .category_item:hover a p {
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -264,13 +264,13 @@
   justify-content: center;
   align-items: center;
 }
- /* Best sells item image */
+/* Best sells item image */
 .best_sells .best_sells_items .best_sell_item img {
   width: 8rem;
   height: 10rem;
   box-shadow: var(--box-shodow);
 }
- /* Best sells item Descriptions */
+/* Best sells item Descriptions */
 .best_sells .best_sells_items .best_sell_item .descriptions {
   display: flex;
   flex-direction: column;
@@ -308,8 +308,8 @@
 /* End of best sells */
 
 /* Daily quote */
-.daily_quote{
-  margin: 5rem 0;
+.daily_quote {
+  margin: 3.5rem 0;
   background-image: url(../images/quote.jpg);
   background-size: cover;
   background-color: rgba(136, 12, 136, 0.5);
@@ -325,9 +325,54 @@
   gap: 1rem;
   color: var(--clr-white);
 }
-.daily_quote .quote_title{
+.daily_quote .quote_title {
   font-size: 1.3rem;
 }
-.daily_quote .quote_author{
+.daily_quote .quote_author {
   font-size: 1.3rem;
 }
+/* End of Daily quote */
+
+/* Popular authors */
+.popular_authors .popular_authors_title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--clr-Deep-Plum);
+  border-bottom: 3px solid var(--clr-Dusty-Pink);
+  width: fit-content;
+  padding: 1rem;
+}
+.popular_authors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.popular_authors .authors {
+  display: flex;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+/* Author */
+.popular_authors a .p_author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.popular_authors .authors a .p_author .author_name {
+  color: var(--clr-Deep-Plum);
+}
+.popular_authors .authors a .p_author img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.popular_authors .authors a .p_author .author_book {
+  color: var(--clr-Dusty-Pink);
+}
+/* End of Popular authors */
