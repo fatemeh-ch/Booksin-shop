@@ -6,7 +6,31 @@
   .container .header .top_header .logo img {
     width: 2.5rem;
   }
-  .container .header .top_header .top_header_icons{
+  .container .header .top_header .top_header_icons {
     margin-left: 0;
+  }
+}
+
+/* 992px */
+@media screen and (max-width: 992px) {
+  /* Category */
+  .category .categories {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  /* Best sells */
+  .best_sells {
+    margin-top: 3rem;
+  }
+  .best_sells .best_sells_items{
+    grid-template-columns: repeat(5, auto);
+    gap: 2.5rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors{
+    gap: 3rem;
   }
 }
