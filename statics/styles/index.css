@@ -389,6 +389,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
 }
 /* Footer items */
 .footer .footer_items {
