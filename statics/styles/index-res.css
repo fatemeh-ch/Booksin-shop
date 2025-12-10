@@ -38,7 +38,7 @@
 /* 900px */
 @media screen and (max-width: 900px) {
   /* Hedaer top Header */
-  .container .header .top_header .search_box form input {
+  .search_box form input {
     padding: 0.5rem 10rem 0.5rem 1rem;
   }
 
@@ -71,5 +71,44 @@
   .popular_authors .authors a .p_author img {
     width: 5rem;
     height: 5rem;
+  }
+}
+
+/* 800px */
+@media screen and (max-width: 800px) {
+  /* Search box */
+  .top_header .search_box {
+    display: none;
+  }
+
+  /* Slider */
+  .slider {
+    position: relative;
+    height: 20rem;
+  }
+  #slider_search_box {
+    display: block;
+  }
+  .search_box form button {
+    right: 14.1rem;
+  }
+  .slider .shop_now {
+    display: none;
+  }
+
+  /* Category */
+  .category .categories {
+    gap: 2rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    gap: 1.5rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
