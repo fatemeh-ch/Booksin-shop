@@ -24,13 +24,52 @@
   .best_sells {
     margin-top: 3rem;
   }
-  .best_sells .best_sells_items{
+  .best_sells .best_sells_items {
     grid-template-columns: repeat(5, auto);
     gap: 2.5rem;
   }
 
   /* Popular authors */
-  .popular_authors .authors{
+  .popular_authors .authors {
     gap: 3rem;
+  }
+}
+
+/* 900px */
+@media screen and (max-width: 900px) {
+  /* Hedaer top Header */
+  .container .header .top_header .search_box form input {
+    padding: 0.5rem 10rem 0.5rem 1rem;
+  }
+
+  /* Navbar */
+  .header .navigation .navigation_bar {
+    gap: 2rem;
+  }
+
+  /* Category */
+  .category .categories {
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* Best sells items */
+  .best_sells .best_sells_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors {
+    gap: 2rem;
+  }
+  .popular_authors .authors a .p_author img {
+    width: 5rem;
+    height: 5rem;
   }
 }
