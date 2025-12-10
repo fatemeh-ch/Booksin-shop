@@ -24,7 +24,7 @@
   display: flex;
   position: relative;
 }
-.container .header .top_header .search_box form input {
+.search_box form input {
   padding: 0.5rem 15rem 0.5rem 2rem;
   border: none;
   background-color: var(--clr-gray);
@@ -34,14 +34,14 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-.container .header .top_header .search_box form input:focus {
+.search_box form input:focus {
   outline: none;
 }
-.container .header .top_header .search_box form input::placeholder {
+.search_box form input::placeholder {
   font-size: 0.8rem;
 }
 /* Search icon */
-.container .header .top_header .search_box form button {
+.search_box form button {
   position: absolute;
   right: 0;
   text-align: center;
@@ -54,7 +54,7 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-.container .header .top_header .search_box form button:hover {
+.search_box form button:hover {
   background-color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -62,11 +62,11 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.container .header .top_header .search_box .fa-magnifying-glass {
+.search_box .fa-magnifying-glass {
   font-size: 1rem;
   color: var(--clr-black);
 }
-.container .header .top_header .search_box .fa-magnifying-glass:hover {
+.search_box .fa-magnifying-glass:hover {
   color: var(--clr-white);
   transition: var(--transition);
 }
@@ -156,6 +156,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#slider_search_box{
+  display: none;
 }
 /* Shop now button */
 .slider .shop_now {
