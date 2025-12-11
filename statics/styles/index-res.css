@@ -215,3 +215,17 @@
     font-size: 1.2rem;
   }
 }
+
+/* 700px */
+@media screen and (max-width: 700px) {
+  /* Header */
+  .container .header .top_header .logo h1 {
+    font-size: 1.5rem;
+  }
+    .container .header .top_header .logo img {
+    width: 2rem;
+  }
+  .container .header .top_header .top_header_icons a {
+  font-size: 1.3rem;
+  }
+}
