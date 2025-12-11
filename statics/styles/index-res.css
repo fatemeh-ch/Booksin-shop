@@ -222,10 +222,20 @@
   .container .header .top_header .logo h1 {
     font-size: 1.5rem;
   }
-    .container .header .top_header .logo img {
+  .container .header .top_header .logo img {
     width: 2rem;
   }
   .container .header .top_header .top_header_icons a {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  /* Slider */
+  .search_box form button {
+    right: 12rem;
+  }
+
+  /* Category */
+  .category .categories {
+    gap: 3rem;
   }
 }
