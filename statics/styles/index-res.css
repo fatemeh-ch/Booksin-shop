@@ -112,3 +112,106 @@
     justify-content: flex-end;
   }
 }
+
+/* 768px */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  .header .navigation {
+    margin-top: 3rem;
+  }
+  .header .navigation .navigation_bar {
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .header .navigation .navigation_bar li a {
+    font-size: 0.9rem;
+  }
+  .header .navigation .navigation_bar li:first-child {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+  }
+
+  /* Searchbox */
+  .search_box form button {
+    right: 14rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  /* Category */
+  .category .category_item {
+    padding-bottom: 0.5rem;
+  }
+  .category .category_title {
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid var(--clr-Dusty-Pink);
+  }
+  .category .category_item img {
+    width: 6rem;
+    height: 8rem;
+  }
+  .category .category_item p {
+    font-size: 0.8rem;
+  }
+
+  /* Best sells */
+  .best_sells .best_sells_items {
+    gap: 0.5rem;
+  }
+  .best_sells .best_sells_title {
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+  }
+  .best_sells .best_sells_items .best_sell_item img {
+    width: 6rem;
+    height: 8rem;
+  }
+  .best_sells .best_sells_items .best_sell_item .descriptions {
+    font-size: 0.8rem;
+  }
+  /* Daily qoute */
+  .daily_quote {
+    margin: 2rem 0;
+    height: 10rem;
+  }
+  .daily_quote .quote_title {
+    font-size: 1rem;
+  }
+  .daily_quote .quote_author {
+    font-size: 0.9rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .popular_authors_title {
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--clr-Dusty-Pink);
+    padding-bottom: 0.5rem;
+  }
+  .popular_authors a .p_author {
+    gap: 0.5rem;
+  }
+  .popular_authors .authors a .p_author img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .popular_authors .authors a .p_author .author_name {
+    font-size: 0.8rem;
+  }
+  .popular_authors .authors a .p_author .author_book {
+    font-size: 0.7rem;
+  }
+
+  /* Footer */
+  .footer {
+    height: fit-content;
+    padding-bottom: 1rem;
+  }
+  .footer .footer_section_titles {
+    margin-bottom: 0.5rem;
+  }
+  .footer .social_medias .fa-telegram,
+  .fa-x,
+  .fa-instagram,
+  .fa-whatsapp {
+    font-size: 1.2rem;
+  }
+}
