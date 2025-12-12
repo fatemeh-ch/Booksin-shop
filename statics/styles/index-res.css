@@ -186,12 +186,13 @@
     border-bottom: 2px solid var(--clr-Dusty-Pink);
     padding-bottom: 0.5rem;
   }
+  .popular_authors .authors{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 6rem;
+   }
   .popular_authors a .p_author {
     gap: 0.5rem;
-  }
-  .popular_authors .authors a .p_author img {
-    width: 4rem;
-    height: 4rem;
   }
   .popular_authors .authors a .p_author .author_name {
     font-size: 0.8rem;
@@ -242,5 +243,10 @@
   /* Best sells */
   .best_sells .best_sells_items {
     gap: 2rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors{
+    column-gap: 4rem;
   }
 }
