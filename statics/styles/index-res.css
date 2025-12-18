@@ -273,4 +273,9 @@
   .search_box form button {
     right: 9.4rem;
   }
+
+  /* Category */
+  .category .categories {
+    justify-content: space-between;
+  }
 }
