@@ -311,9 +311,16 @@
   .search_box form button {
     right: 7rem;
   }
+
   /* slider */
   .slider {
     position: relative;
     height: 15rem;
+  }
+
+  /* Category */
+  .category .category_title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
