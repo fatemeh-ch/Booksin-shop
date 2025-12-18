@@ -435,3 +435,25 @@
     display: none;
   }
 }
+
+/* 400px */
+@media screen and (max-width: 400px) {
+  /* Searchbox */
+  .search_box form button {
+    right: 3rem;
+  }
+
+  /* Category */
+  .category .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category .category_item img {
+    width: 6rem;
+  }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.6rem;
+  }
+}
