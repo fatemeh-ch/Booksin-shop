@@ -291,4 +291,16 @@
   .daily_quote{
     background-position: top;
   }
+
+  /* Footer */
+  .footer{
+    padding-bottom: 5rem;
+  }
+  .footer .legal{
+    display: none;
+  }
+  .footer .help{
+    display: flex;
+    flex-direction: column;
+  }
 }
