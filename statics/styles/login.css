@@ -1,7 +1,31 @@
 /* Login container */
-.login_container{
-    width: 80%;
-    margin:3rem auto;
-    background-color: var(--clr-Cream-White);
+.login_container {
+  width: 60%;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--clr-Cream-White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* End of Login container */
+
+/* Logo */
+.login_container .logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logo image */
+.login_container .logo img {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Logo title */
+.login_container .logo .logo_title {
+  font-size: 3.5rem;
+  color: var(--clr-Deep-Plum);
+}
+/* End of Logo */
