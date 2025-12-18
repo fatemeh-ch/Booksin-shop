@@ -400,4 +400,12 @@
   .best_sells .best_sells_items .best_sell_item .descriptions .author {
     font-size: 0.9rem;
   }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.7rem;
+  }
+  .daily_quote .quote_author {
+    font-size: 0.7rem;
+  }
 }
