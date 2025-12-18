@@ -420,4 +420,13 @@
   .popular_authors .authors {
     column-gap: 3.5rem;
   }
+
+  /* Footer */
+  .footer .container {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+  }
+  .footer .social_medias {
+    display: none;
+  }
 }
