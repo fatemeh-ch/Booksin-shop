@@ -311,4 +311,9 @@
   .search_box form button {
     right: 7rem;
   }
+  /* slider */
+  .slider {
+    position: relative;
+    height: 15rem;
+  }
 }
