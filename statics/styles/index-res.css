@@ -391,6 +391,11 @@
 
 /* 450px */
 @media screen and (max-width: 450px) {
+  /* Responsive Navigation */
+  .navigation_bar_res a p {
+    font-size: 0.8rem;
+  }
+
   /* Searchbox */
   .search_box form input {
     padding-right: 7rem;
