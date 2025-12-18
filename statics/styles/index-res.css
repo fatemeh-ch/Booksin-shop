@@ -278,4 +278,12 @@
   .category .categories {
     justify-content: space-between;
   }
+
+  /* Best sells */
+  .best_sells {
+    margin-top: 4rem;
+  }
+  .best_sells .best_sells_items {
+    justify-content: space-between;
+  }
 }
