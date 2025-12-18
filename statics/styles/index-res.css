@@ -327,4 +327,10 @@
     width: 6rem;
     height: 6rem;
   }
+
+  /* Best sells */
+  .best_sells .best_sells_title {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
 }
