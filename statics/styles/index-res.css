@@ -333,10 +333,15 @@
     font-size: 1.6rem;
     margin-bottom: 3rem;
   }
-  .best_sells .best_sells_items{
+  .best_sells .best_sells_items {
     gap: 0;
   }
-  .best_sells .best_sells_items a{
+  .best_sells .best_sells_items a {
     margin-bottom: 2rem;
+  }
+
+  /* Daily quote */
+  .daily_quote .quote_title {
+    font-size: 0.9rem;
   }
 }
