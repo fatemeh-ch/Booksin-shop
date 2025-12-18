@@ -333,4 +333,10 @@
     font-size: 1.6rem;
     margin-bottom: 3rem;
   }
+  .best_sells .best_sells_items{
+    gap: 0;
+  }
+  .best_sells .best_sells_items a{
+    margin-bottom: 2rem;
+  }
 }
