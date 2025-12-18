@@ -376,4 +376,10 @@
   }
 
   /* Best sells */
+    .best_sells .best_sells_items{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      justify-content: center;
+      gap: 1rem 4rem;
+    }
 }
