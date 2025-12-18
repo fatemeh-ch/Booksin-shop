@@ -268,4 +268,9 @@
     display: flex !important;
     justify-content: space-between;
   }
+
+  /* Searchbox */
+  .search_box form button {
+    right: 9.4rem;
+  }
 }
