@@ -153,13 +153,13 @@
   background-color: var(--clr-white);
   width: 100%;
   height: 4rem;
-  padding: 1rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 2rem;
 }
 .navigation_bar_res a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 0.5rem;
   color: var(--clr-Deep-Plum);
 }
 .navigation_bar_res a i {
