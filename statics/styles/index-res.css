@@ -344,4 +344,12 @@
   .daily_quote .quote_title {
     font-size: 0.9rem;
   }
+
+  /* Footer */
+  .footer .footer_section_titles {
+    font-size: 0.8rem;
+  }
+  .footer .footer_items a{
+    font-size: 0.8rem;
+  }
 }
