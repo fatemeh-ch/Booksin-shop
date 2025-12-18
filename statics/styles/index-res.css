@@ -388,3 +388,11 @@
     font-size: 0.8rem;
   }
 }
+
+/* 450px */
+@media screen and (max-width: 450px) {
+  /* Searchbox */
+  .search_box form input {
+    padding-right: 7rem;
+  }
+}
