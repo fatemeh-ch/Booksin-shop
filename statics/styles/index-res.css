@@ -368,4 +368,12 @@
   .search_box form button {
     right: 4.5rem;
   }
+
+  /* Category */
+  .category .category_item img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* Best sells */
 }
