@@ -323,4 +323,8 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
+  .category .category_item img {
+    width: 6rem;
+    height: 6rem;
+  }
 }
