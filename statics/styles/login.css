@@ -1,0 +1,7 @@
+/* Login container */
+.login_container{
+    width: 80%;
+    margin:3rem auto;
+    background-color: var(--clr-Cream-White);
+}
+/* End of Login container */
