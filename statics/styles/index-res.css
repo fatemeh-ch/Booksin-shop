@@ -402,10 +402,22 @@
   }
 
   /* Daily quote */
+  .daily_quote {
+    margin-bottom: 1rem;
+  }
   .daily_quote .quote_title {
     font-size: 0.7rem;
   }
   .daily_quote .quote_author {
     font-size: 0.7rem;
+  }
+
+  /* Popular authors */
+  .popular_authors .authors a .p_author img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .popular_authors .authors {
+    column-gap: 3.5rem;
   }
 }
