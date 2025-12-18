@@ -288,19 +288,27 @@
   }
 
   /* Daily quote */
-  .daily_quote{
+  .daily_quote {
     background-position: top;
   }
 
   /* Footer */
-  .footer{
+  .footer {
     padding-bottom: 5rem;
   }
-  .footer .legal{
+  .footer .legal {
     display: none;
   }
-  .footer .help{
+  .footer .help {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* 576px */
+@media screen and (max-width: 576px) {
+  /* Searchbox */
+  .search_box form button {
+    right: 7rem;
   }
 }
