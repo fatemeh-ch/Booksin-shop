@@ -468,6 +468,11 @@
   gap: 0.5rem;
 }
 /* Legal */
-.footer .legal a {
+.footer .legal, .footer .help a {
   color: var(--clr-Deep-Plum);
 }
+/* Help */
+.footer .help{
+  display: none;
+}
+
