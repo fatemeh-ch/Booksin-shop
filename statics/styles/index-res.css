@@ -395,4 +395,9 @@
   .search_box form input {
     padding-right: 7rem;
   }
+
+  /* Best sells */
+  .best_sells .best_sells_items .best_sell_item .descriptions .author {
+    font-size: 0.9rem;
+  }
 }
