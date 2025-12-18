@@ -286,4 +286,9 @@
   .best_sells .best_sells_items {
     justify-content: space-between;
   }
+
+  /* Daily quote */
+  .daily_quote{
+    background-position: top;
+  }
 }
