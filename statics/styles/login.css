@@ -4,13 +4,14 @@ body {
 }
 /* Login container */
 .login_container {
-  width: 60%;
+  width: 50%;
   margin: 3rem auto;
   padding: 1rem 2rem;
   background-color: var(--clr-white);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--box-shodow);
 }
 /* End of Login container */
 
@@ -40,3 +41,49 @@ body {
   color: var(--clr-Dusty-Pink);
 }
 /* End of Main title */
+
+/* Login form */
+.login_container .login_form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 80%;
+}
+/* Form inputs */
+.login_form .form_inputs{
+  width: 100%;
+  padding: 1rem 1rem 1rem;
+  outline: none;
+  border: 1px solid var(--clr-Mauve-Mist);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* :Focus */
+.login_form .form_inputs:focus{
+  background-color: var(--clr-Cream-White);
+}
+/* :Hover */
+.login_form .form_inputs:hover{
+  background-color: var(--clr-Cream-White);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* ::Placeholder */
+.login_form .form_inputs::placeholder{
+  color: var(--clr-Deep-Plum);
+  font-size: 1rem;
+}
+
+/* Form icons */
+.form_icons{
+  color: var(--clr-black);
+  font-size: 1.5rem;
+}
+/* End of Login form */
