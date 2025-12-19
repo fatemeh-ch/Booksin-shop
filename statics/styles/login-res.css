@@ -53,4 +53,15 @@
   .login_container .main_title {
     font-size: 1.2rem;
   }
+
+  /* Login form */
+  .login_container .login_form {
+    margin-top: 2rem;
+  }
+  .login_form .form_inputs {
+    padding: 0.7rem 1rem;
+  }
+  .login_form .form_inputs::placeholder {
+    font-size: 0.8rem;
+  }
 }
