@@ -166,7 +166,7 @@
   font-size: 1.2rem;
 }
 .navigation_bar_res a:hover {
-  color: var(--clr-Mauve-Mist);
+  color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
