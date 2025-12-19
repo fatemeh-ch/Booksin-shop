@@ -42,4 +42,12 @@
   .login_container .logo .logo_title {
     font-size: 2.1rem;
   }
+
+  /* Logo image */
+  .login_container .logo img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  
 }
