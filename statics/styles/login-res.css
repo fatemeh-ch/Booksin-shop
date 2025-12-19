@@ -65,3 +65,16 @@
     font-size: 0.8rem;
   }
 }
+
+/* 500px */
+@media screen and (max-width: 500px) {
+  /* Logo title */
+  .login_container .logo .logo_title {
+    font-size: 1.5rem;
+  }
+  /* Logo image */
+  .login_container .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
