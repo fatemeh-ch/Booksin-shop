@@ -77,4 +77,12 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+
+  /* Main title */
+  .login_container .main_title {
+    margin-top: 1.5rem;
+  }
+  .login_container .main_title {
+    font-size: 1rem;
+  }
 }
