@@ -1,0 +1,22 @@
+/* 800px */
+@media screen and (max-width: 800px) {
+  .login_container {
+    width: 60%;
+  }
+
+  /* Logo */
+  .login_container .logo {
+    gap: 1rem;
+  }
+
+  /* Logo image */
+  .login_container .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Logo title */
+  .login_container .logo .logo_title {
+    font-size: 2.3rem;
+  }
+}
