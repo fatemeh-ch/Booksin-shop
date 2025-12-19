@@ -6,7 +6,7 @@ body {
 .login_container {
   width: 50%;
   margin: 3rem auto;
-  padding: 1rem 2rem;
+  padding: 2rem 1rem 3rem 1rem;
   background-color: var(--clr-white);
   display: flex;
   flex-direction: column;
@@ -24,20 +24,20 @@ body {
 
 /* Logo image */
 .login_container .logo img {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Logo title */
 .login_container .logo .logo_title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--clr-Deep-Plum);
 }
 /* End of Logo */
 
 /* Main title */
 .login_container .main_title {
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: var(--clr-Dusty-Pink);
 }
 /* End of Main title */
@@ -89,6 +89,7 @@ body {
 
 /* Submit button */
 .submit_btn{
+  margin-top: 1rem;
   background-color: var(--clr-Warm-Taupe);
   border: none;
   padding: 0.5rem 0;
