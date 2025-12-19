@@ -1,6 +1,7 @@
 /* Body */
 body {
   background-color: var(--clr-Cream-White);
+  height: 100dvh;
 }
 /* Login container */
 .login_container {
