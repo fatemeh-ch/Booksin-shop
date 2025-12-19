@@ -49,5 +49,8 @@
     height: 2.8rem;
   }
 
-  
+  /* Main title */
+  .login_container .main_title {
+    font-size: 1.2rem;
+  }
 }
