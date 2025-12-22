@@ -1,16 +1,3 @@
-/* 1100 px */
-
-@media screen and (max-width: 1200px) {
-  /* Hedaer */
-  /* Top header */
-  .container .header .top_header .logo img {
-    width: 2.5rem;
-  }
-  .container .header .top_header .top_header_icons {
-    margin-left: 0;
-  }
-}
-
 /* 992px */
 @media screen and (max-width: 992px) {
   /* Category */
@@ -37,16 +24,6 @@
 
 /* 900px */
 @media screen and (max-width: 900px) {
-  /* Hedaer top Header */
-  .search_box form input {
-    padding: 0.5rem 10rem 0.5rem 1rem;
-  }
-
-  /* Navbar */
-  .header .navigation .navigation_bar {
-    gap: 2rem;
-  }
-
   /* Category */
   .category .categories {
     margin: 0 auto;
@@ -76,11 +53,6 @@
 
 /* 800px */
 @media screen and (max-width: 800px) {
-  /* Search box */
-  .top_header .search_box {
-    display: none;
-  }
-
   /* Slider */
   .slider {
     position: relative;
@@ -115,27 +87,6 @@
 
 /* 768px */
 @media screen and (max-width: 768px) {
-  /* Navigation */
-  .header .navigation {
-    margin-top: 3rem;
-  }
-  .header .navigation .navigation_bar {
-    gap: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  .header .navigation .navigation_bar li a {
-    font-size: 0.9rem;
-  }
-  .header .navigation .navigation_bar li:first-child {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-  }
-
-  /* Searchbox */
-  .search_box form button {
-    right: 14rem;
-    padding: 0.45rem 0.8rem;
-  }
-
   /* Category */
   .category .category_item {
     padding-bottom: 0.5rem;
@@ -200,36 +151,10 @@
   .popular_authors .authors a .p_author .author_book {
     font-size: 0.7rem;
   }
-
-  /* Footer */
-  .footer {
-    height: fit-content;
-    padding-bottom: 1rem;
-  }
-  .footer .footer_section_titles {
-    margin-bottom: 0.5rem;
-  }
-  .footer .social_medias .fa-telegram,
-  .fa-x,
-  .fa-instagram,
-  .fa-whatsapp {
-    font-size: 1.2rem;
-  }
 }
 
 /* 700px */
 @media screen and (max-width: 700px) {
-  /* Header */
-  .container .header .top_header .logo h1 {
-    font-size: 1.5rem;
-  }
-  .container .header .top_header .logo img {
-    width: 2rem;
-  }
-  .container .header .top_header .top_header_icons a {
-    font-size: 1.3rem;
-  }
-
   /* Slider */
   .search_box form button {
     right: 12rem;
@@ -253,27 +178,6 @@
 
 /* 650px */
 @media screen and (max-width: 650px) {
-  /* Navigation */
-  .container .navigation .navigation_bar {
-    display: none;
-    margin: 0;
-    padding: 0;
-    height: 0;
-  }
-  .container:first-child {
-    padding: 2rem 3rem 0 3rem;
-  }
-  /* Responsive Navigation */
-  .navigation_bar_res {
-    display: flex !important;
-    justify-content: space-between;
-  }
-
-  /* Searchbox */
-  .search_box form button {
-    right: 9.4rem;
-  }
-
   /* Category */
   .category .categories {
     justify-content: space-between;
@@ -291,27 +195,10 @@
   .daily_quote {
     background-position: top;
   }
-
-  /* Footer */
-  .footer {
-    padding-bottom: 5rem;
-  }
-  .footer .legal {
-    display: none;
-  }
-  .footer .help {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* 576px */
 @media screen and (max-width: 576px) {
-  /* Searchbox */
-  .search_box form button {
-    right: 7rem;
-  }
-
   /* slider */
   .slider {
     position: relative;
@@ -344,31 +231,10 @@
   .daily_quote .quote_title {
     font-size: 0.9rem;
   }
-
-  /* Footer */
-  .footer .footer_section_titles {
-    font-size: 0.8rem;
-  }
-  .footer .footer_items a {
-    font-size: 0.8rem;
-  }
-
-  /* Responsive Navigation */
-  .navigation_bar_res a i {
-    font-size: 1.2rem;
-  }
-  .navigation_bar_res a p {
-    font-size: 0.9rem;
-  }
 }
 
 /* 500px */
 @media screen and (max-width: 500px) {
-  /* Searchbox */
-  .search_box form button {
-    right: 4.5rem;
-  }
-
   /* Category */
   .category .category_item img {
     width: 7rem;
@@ -391,16 +257,6 @@
 
 /* 450px */
 @media screen and (max-width: 450px) {
-  /* Responsive Navigation */
-  .navigation_bar_res a p {
-    font-size: 0.8rem;
-  }
-
-  /* Searchbox */
-  .search_box form input {
-    padding-right: 7rem;
-  }
-
   /* Best sells */
   .best_sells .best_sells_items .best_sell_item .descriptions .author {
     font-size: 0.9rem;
@@ -425,24 +281,10 @@
   .popular_authors .authors {
     column-gap: 3.5rem;
   }
-
-  /* Footer */
-  .footer .container {
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
-  }
-  .footer .social_medias {
-    display: none;
-  }
 }
 
 /* 400px */
 @media screen and (max-width: 400px) {
-  /* Searchbox */
-  .search_box form button {
-    right: 3rem;
-  }
-
   /* Category */
   .category .categories {
     display: grid;
