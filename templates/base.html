@@ -73,7 +73,7 @@
                             <a href="#"><i class="fa-solid fa-info"></i> About us</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-phone"></i> Contact us</a>
+                            <a href="{% url 'core:contact' %}"><i class="fa-solid fa-phone"></i> Contact us</a>
                         </li>
                     </ul>
                 </nav>
@@ -144,7 +144,7 @@
             <section class="footer_items help footer_items_hover">
                 <h6 class="footer_section_titles">Help</h6>
                 <a href="#">About us</a>
-                <a href="#">Contact us</a>
+                <a href="{% url 'core:contact' %}">Contact us</a>
                 <a href="#">FAQ</a>
             </section>
 
