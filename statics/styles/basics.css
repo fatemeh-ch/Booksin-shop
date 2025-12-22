@@ -40,3 +40,185 @@ ul {
 .container {
   padding: 2rem 5rem;
 }
+
+/* COLLECTIVE STYLES 
+======================= */
+/* Header Section*/
+/* Top header Section */
+.container .header .top_header {
+  display: flex;
+  justify-content: space-between;
+}
+/* Logo Section */
+.container .header .top_header .logo {
+  display: flex;
+  align-items: center;
+}
+/* Logo Image */
+.container .header .top_header .logo img {
+  width: 12%;
+  margin-right: 0.5rem;
+}
+/* Logo title */
+.container .header .top_header .logo h1 {
+  color: var(--clr-Deep-Plum);
+}
+
+/* Search_box */
+.container .header .top_header .search_box form {
+  display: flex;
+  position: relative;
+}
+.search_box form input {
+  padding: 0.5rem 15rem 0.5rem 2rem;
+  border: none;
+  background-color: var(--clr-gray);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.search_box form input:focus {
+  outline: none;
+}
+.search_box form input::placeholder {
+  font-size: 0.8rem;
+}
+/* Search icon */
+.search_box form button {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--clr-Mauve-Mist);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.search_box form button:hover {
+  background-color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.search_box .fa-magnifying-glass {
+  font-size: 1rem;
+  color: var(--clr-black);
+}
+.search_box .fa-magnifying-glass:hover {
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+/* Top Header icons */
+.container .header .top_header .top_header_icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 20%;
+}
+.container .header .top_header .top_header_icons a {
+  color: var(--clr-Deep-Plum);
+  font-size: 1.5rem;
+}
+.container .header .top_header .top_header_icons a:hover {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* End of Top header Section */
+
+/* Navigation bar */
+.header .navigation {
+  margin-top: 3.5rem;
+}
+.header .navigation .navigation_bar {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  border-top: 3px solid var(--clr-gray);
+  padding-top: 2rem;
+}
+.header .navigation .navigation_bar li a {
+  color: var(--clr-Deep-Plum);
+  font-size: 1rem;
+}
+.header .navigation .navigation_bar li:not(:first-child):hover a {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  margin-top: 2rem;
+  height: 20rem;
+  background-color: var(--clr-gray);
+}
+.footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+}
+/* Footer items */
+.footer .footer_items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* Footer items titles */
+.footer .footer_section_titles {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--clr-Deep-Plum);
+}
+/* Quick access */
+.footer .quick_access a {
+  color: var(--clr-black);
+}
+.footer .footer_items_hover a:hover {
+  width: fit-content;
+  border-bottom: 2px solid var(--clr-Dusty-Pink);
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+}
+/* Social medias */
+.footer .social_medias a {
+  color: var(--clr-Deep-Plum);
+}
+.footer .social_medias .fa-telegram,
+.fa-x,
+.fa-instagram,
+.fa-whatsapp {
+  font-size: 1.8rem;
+}
+.footer .social_medias a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Legal */
+.footer .legal,
+.footer .help a {
+  color: var(--clr-Deep-Plum);
+}
+/* Help */
+.footer .help {
+  display: none;
+}
