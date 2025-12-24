@@ -110,3 +110,22 @@
   border: 2px solid var(--clr-Dusty-Pink);
 }
 /* End of Contact info */
+
+/* Contact Button */
+.contact_button{
+  margin-top: 3rem;
+  margin-left: 90%;
+  background-color: var(--clr-Mauve-Mist);
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--clr-white);
+}
+.contact_button:hover{
+  background-color: var(--clr-Dusty-Pink);
+  font-weight: bold;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
