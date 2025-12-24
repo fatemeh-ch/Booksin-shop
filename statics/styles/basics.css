@@ -274,8 +274,7 @@ ul {
   gap: 0.5rem;
 }
 /* Legal */
-.footer .legal,
-.footer .help a {
+.footer .legal a,.footer .help a {
   color: var(--clr-Deep-Plum);
 }
 /* Help */
