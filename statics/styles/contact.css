@@ -25,7 +25,7 @@
 /* Contact info */
 
 /* Contact Section */
-.contact_section{
+.contact_section {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
@@ -69,24 +69,24 @@
 /* End of Contact item */
 
 /* Contact form */
-.contact_form{
+.contact_form {
   display: flex;
   gap: 2rem;
 }
 /* Form inputs */
-.contact_section .text_boxes{
+.contact_section .text_boxes {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.contact_section .text_boxes input[type='text'],
-.contact_section .text_boxes input[type='email']{
+.contact_section .text_boxes input[type="text"],
+.contact_section .text_boxes input[type="email"] {
   padding: 0.8rem 5rem 0.8rem 1rem;
   outline: none;
   border: 2px solid var(--clr-gray);
 }
-.contact_section .text_boxes input[type='text']:focus,
-.contact_section .text_boxes input[type='email']:focus{
+.contact_section .text_boxes input[type="text"]:focus,
+.contact_section .text_boxes input[type="email"]:focus {
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -95,14 +95,14 @@
   border: 2px solid var(--clr-Dusty-Pink);
 }
 /* Text area */
-.contact_form textarea{
+.contact_form textarea {
   padding: 1rem 10rem 5rem 1rem;
   outline: none;
   border: 2px solid var(--clr-gray);
   resize: none;
 }
-.contact_form textarea:focus{
-    transition: var(--transition);
+.contact_form textarea:focus {
+  transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
@@ -112,7 +112,7 @@
 /* End of Contact info */
 
 /* Contact Button */
-.contact_button{
+.contact_button {
   margin-top: 2rem;
   margin-left: auto;
   display: block;
@@ -121,7 +121,7 @@
   padding: 1rem 2rem;
   color: var(--clr-white);
 }
-.contact_button:hover{
+.contact_button:hover {
   background-color: var(--clr-Dusty-Pink);
   font-weight: bold;
   transition: var(--transition);
@@ -142,15 +142,17 @@ Responsive codes
 ================
 */
 
-/* 992px */
-@media screen and (max-width:992px){
-  /* Contact info  */
-  .contact_info .contact_info_item{
-    gap: 2rem;
-  }
-
+/* 1200px */
+@media screen and (max-width: 1100px) {
   /* Contact form */
-  .contact_form{
+  .contact_form {
     flex-direction: column;
+  }
+}
+/* 992px */
+@media screen and (max-width: 992px) {
+  /* Contact info  */
+  .contact_info .contact_info_item {
+    gap: 2rem;
   }
 }
