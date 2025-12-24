@@ -156,7 +156,7 @@ Responsive codes
 /* 850px */
 @media screen and (max-width: 850px) {
   /* Contact info */
-  .contact_info{
+  .contact_info {
     gap: 2.5rem;
   }
   .contact_info .contact_info_item .info address:first-child,
@@ -168,5 +168,32 @@ Responsive codes
   }
   .contact_info .contact_info_item i {
     font-size: 1.5rem;
+  }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+  /* Main title */
+  .contact_intro .main_title {
+    font-size: 2.2rem;
+  }
+  .contact_intro .description {
+    font-size: 1.2rem;
+  }
+  
+  /* Contact section */
+  .contact_section {
+    flex-direction: column;
+  }
+
+  /* Contact info */
+  .contact_info {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .contact_info .contact_info_item .info address:first-child,
+  .info a {
+    font-size: 0.8rem;
   }
 }
