@@ -1,0 +1,22 @@
+/* Contact Intro */
+.contact_intro {
+  background-color: var(--clr-Cream-White);
+  margin: 5rem 0 8rem;
+}
+.contact_intro .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+/* Main title */
+.contact_intro .container .main_title {
+  color: var(--clr-Deep-Plum);
+  font-size: 2.5rem;
+}
+/* Description */
+.contact_intro .container .description {
+  color: var(--clr-Dusty-Pink);
+  font-size: 1.4rem;
+}
+/* End of Contact Intro */
