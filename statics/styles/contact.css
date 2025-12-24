@@ -1,22 +1,65 @@
-/* Contact Intro */
-.contact_intro {
+/* Contact*/
+.contact {
   background-color: var(--clr-Cream-White);
   margin: 5rem 0 8rem;
 }
-.contact_intro .container {
+/* Contact intro */
+.contact_intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 /* Main title */
-.contact_intro .container .main_title {
+.contact_intro .main_title {
   color: var(--clr-Deep-Plum);
   font-size: 2.5rem;
 }
 /* Description */
-.contact_intro .container .description {
+.contact_intro .description {
   color: var(--clr-Dusty-Pink);
   font-size: 1.4rem;
 }
 /* End of Contact Intro */
+
+/* Contact info */
+.contact_info {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+/* Contact item */
+.contact_info .contact_info_item {
+  display: flex;
+  gap: 3rem;
+  align-items: center !important;
+}
+.contact_info .contact_info_item i {
+  color: var(--clr-Deep-Plum);
+  font-size: 1.8rem;
+}
+.contact_info .contact_info_item i:hover {
+  color: var(--clr-Dusty-Pink);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* Info  */
+.contact_info .contact_info_item .info address:first-child,
+.info a {
+  color: var(--clr-Deep-Plum);
+}
+.contact_info .contact_info_item .info address:nth-child(2) {
+  color: var(--clr-Dusty-Pink);
+}
+/* End of Contact item */
+
+/* End of Contact info */
