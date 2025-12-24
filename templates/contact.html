@@ -2,9 +2,21 @@
 {% load static %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'styles/contact.css' %}">
 {% endblock %}
 
-{% block title %} Contact {% endblock %}
+{% block title %} Contact Us{% endblock %}
 
 {% block content %}
+
+<!-- Contact info -->
+<section class="contact_intro">
+    <div class="container">
+        <h1 class="main_title">Contact Us</h1>
+        <p class="description">We value your opinion</p>
+        <p class="description">Your feedback helps us improve our book collection and your reading experience</p>
+    </div>
+</section>
+<!-- End of Contact info -->
+
 {% endblock %}
