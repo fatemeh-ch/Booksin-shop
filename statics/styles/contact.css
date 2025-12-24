@@ -180,7 +180,7 @@ Responsive codes
   .contact_intro .description {
     font-size: 1.2rem;
   }
-  
+
   /* Contact section */
   .contact_section {
     flex-direction: column;
@@ -195,5 +195,18 @@ Responsive codes
   .contact_info .contact_info_item .info address:first-child,
   .info a {
     font-size: 0.8rem;
+  }
+}
+
+/* 576px */
+@media screen and (max-width: 576px) {
+  /* Contact info item */
+  .contact_info .contact_info_item {
+    flex-wrap: wrap;
+  }
+
+  /* Submit button */
+  .contact_button {
+    padding: 1rem;
   }
 }
