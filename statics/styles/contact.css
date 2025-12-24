@@ -113,8 +113,9 @@
 
 /* Contact Button */
 .contact_button{
-  margin-top: 3rem;
-  margin-left: 90%;
+  margin-top: 2rem;
+  margin-left: auto;
+  display: block;
   background-color: var(--clr-Mauve-Mist);
   border: none;
   padding: 1rem 2rem;
@@ -128,4 +129,28 @@
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*
+================
+Responsive codes
+================
+*/
+
+/* 992px */
+@media screen and (max-width:992px){
+  /* Contact info  */
+  .contact_info .contact_info_item{
+    gap: 2rem;
+  }
+
+  /* Contact form */
+  .contact_form{
+    flex-direction: column;
+  }
 }
