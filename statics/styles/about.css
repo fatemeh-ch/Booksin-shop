@@ -50,9 +50,22 @@ RESPONSIVE CODES
 
 /* 1100PX */
 @media screen and (max-width: 1100px) {
-    
   /* About texts */
   .main_section .about_texts h1 {
     font-size: 3rem;
+  }
+}
+
+/* 992px */
+@media screen and (max-width: 992px) {
+  /* About texts */
+  .main_section .about_texts {
+    gap: 1.2rem;
+  }
+  .main_section .about_texts h1 {
+    font-size: 2.5rem;
+  }
+  .main_section .about_texts p {
+    font-size: 1rem;
   }
 }
