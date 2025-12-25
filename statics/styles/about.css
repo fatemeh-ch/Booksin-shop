@@ -69,3 +69,16 @@ RESPONSIVE CODES
     font-size: 1rem;
   }
 }
+
+/* 768px */
+@media screen and (max-width: 768px) {
+  .main_section .about_texts {
+    gap: 1rem;
+  }
+  .main_section .about_texts h1 {
+    font-size: 2rem;
+  }
+  .main_section .about_texts p {
+    font-size: 0.9rem;
+  }
+}
