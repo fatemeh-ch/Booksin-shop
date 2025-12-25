@@ -3,6 +3,7 @@
 .main_section {
   margin: 4rem 0;
   background-color: var(--clr-Cream-White);
+  padding-bottom: 1rem;
 }
 .main_section .container {
   display: flex;
@@ -95,5 +96,15 @@ RESPONSIVE CODES
 
   .main_section .about_texts p {
     font-size: 0.8rem;
+  }
+}
+
+/* 400px */
+@media screen and (max-width: 400px) {
+  .main_section img {
+    width: 55%;
+  }
+  .main_section .about_texts h1 {
+    font-size: 1rem;
   }
 }
