@@ -82,3 +82,18 @@ RESPONSIVE CODES
     font-size: 0.9rem;
   }
 }
+
+/* 576px */
+@media screen and (max-width: 576px) {
+  .main_section .about_texts {
+    gap: 0.5rem;
+  }
+
+  .main_section .about_texts h1 {
+    font-size: 1.5rem;
+  }
+
+  .main_section .about_texts p {
+    font-size: 0.8rem;
+  }
+}
