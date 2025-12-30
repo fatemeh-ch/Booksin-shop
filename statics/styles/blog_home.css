@@ -28,3 +28,30 @@
     font-size: 1.5rem;
 }
 /* End of Blog Title*/
+
+
+/* Post area */
+
+/* Icons */
+.fa-regular{
+    color: var(--clr-Warm-Taupe);
+    font-size: 1.2rem;
+}
+/* Post info */
+
+.post_info{
+    gap: 1.2rem;
+}
+
+/* Styles for every flex item in Post info */
+.post-info-item{
+    gap: 1rem;
+}
+
+.post_categories{
+    margin-bottom: 1rem;
+}
+/* End of Post info */
+
+
+/* End of Post area */
