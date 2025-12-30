@@ -37,8 +37,17 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-/* End of Slider */
 
+/* Slider Searchbox */
+#slider_search_box form{
+  position: relative;
+}
+
+/* End of Slider */
+#slider_search_box button{
+  position: absolute;
+  right: 0;
+}
 /* Category */
 .category {
   overflow-x: auto;
