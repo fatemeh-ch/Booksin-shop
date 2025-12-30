@@ -1,0 +1,10 @@
+/* Blog Title*/
+.blog_title{
+    background-color: var(--clr-Mauve-Mist);
+    color: var(--clr-Deep-Plum);
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+/* End of Blog Title*/
