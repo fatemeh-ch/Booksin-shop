@@ -30,6 +30,12 @@
 
 /* Post area */
 
+/* Single Post */
+
+.single_post{
+  gap: 3rem;
+}
+
 /* Icons */
 .single_post .fa-regular {
   color: var(--clr-Warm-Taupe);
@@ -59,12 +65,25 @@
 
 /* Styles for every flex item in Post info */
 .post-info-item {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .post_categories {
   margin-bottom: 1rem;
+  gap: 1rem;
 }
 /* End of Post info */
+
+/* Post Content */
+
+.post-content{
+  gap: 1rem;
+}
+.post-content .post-image img{
+  width: 65%;
+  height: 20rem;
+}
+/* End of Post Content */
+
 
 /* End of Post area */
