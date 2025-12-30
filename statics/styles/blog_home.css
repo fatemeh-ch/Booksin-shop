@@ -88,10 +88,38 @@
 .post-content .post-title h3{
   color: var(--clr-Deep-Plum);
 }
+.post-content .post-title:hover h3{
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
 
 /* Post description */
 .post_description p{
   color: var(--clr-black);
+  line-height: 1.5rem;
+}
+
+/* View more */
+.view_more{
+  margin-top: 1rem;
+}
+.view_more a{
+  padding: 0.7rem 2rem;
+  background-color: var(--clr-Dusty-Pink);
+  color: var(--clr-white);
+  font-weight: 900;
+}
+.view_more a:hover{
+  background-color: var(--clr-Mauve-Mist);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /* End of Post Content */
