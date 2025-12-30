@@ -61,9 +61,7 @@
   #slider_search_box {
     display: block;
   }
-  .search_box form button {
-    right: 14.1rem;
-  }
+
   .slider .shop_now {
     display: none;
   }
@@ -155,10 +153,6 @@
 
 /* 700px */
 @media screen and (max-width: 700px) {
-  /* Slider */
-  .search_box form button {
-    right: 12rem;
-  }
 
   /* Category */
   .category .categories {
@@ -201,7 +195,6 @@
 @media screen and (max-width: 576px) {
   /* slider */
   .slider {
-    position: relative;
     height: 15rem;
   }
 
