@@ -1,3 +1,21 @@
+/* Common styles */
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.column-flex{
+    flex-direction: column;
+}
+
+
 /* Blog Title*/
 .blog_title{
     background-color: var(--clr-Mauve-Mist);
