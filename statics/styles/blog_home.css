@@ -80,10 +80,20 @@
   gap: 1rem;
 }
 .post-content .post-image img{
-  width: 65%;
+  width: 40rem;
   height: 20rem;
 }
-/* End of Post Content */
 
+/* Post title */
+.post-content .post-title h3{
+  color: var(--clr-Deep-Plum);
+}
+
+/* Post description */
+.post_description p{
+  color: var(--clr-black);
+}
+
+/* End of Post Content */
 
 /* End of Post area */
