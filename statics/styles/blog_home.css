@@ -1,57 +1,70 @@
 /* Common styles */
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-.align-items-center{
-    align-items: center;
+.align-items-center {
+  align-items: center;
 }
 
-.justify-content-center{
-    justify-content: center;
+.justify-content-center {
+  justify-content: center;
 }
-.flex-end{
-    justify-content: flex-end;
+.flex-end {
+  justify-content: flex-end;
 }
-.column-flex{
-    flex-direction: column;
+.column-flex {
+  flex-direction: column;
 }
-
 
 /* Blog Title*/
-.blog_title{
-    background-color: var(--clr-Mauve-Mist);
-    color: var(--clr-Deep-Plum);
-    margin: 4rem auto;
-    text-align: center;
-    padding: 0.5rem 0;
-    font-size: 1.5rem;
+.blog_title {
+  background-color: var(--clr-Mauve-Mist);
+  color: var(--clr-Deep-Plum);
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
 }
 /* End of Blog Title*/
-
 
 /* Post area */
 
 /* Icons */
-.fa-regular{
-    color: var(--clr-Warm-Taupe);
-    font-size: 1.2rem;
+.single_post .fa-regular {
+  color: var(--clr-Warm-Taupe);
+  font-size: 1.2rem;
 }
 /* Post info */
 
-.post_info{
-    gap: 1.2rem;
+.post_info {
+  gap: 1.2rem;
+}
+
+.single_post p {
+  color: var(--clr-Deep-Plum);
+}
+.single_post a:hover i {
+  color: var(--clr-Deep-Plum);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.single_post a:hover p {
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
 }
 
 /* Styles for every flex item in Post info */
-.post-info-item{
-    gap: 1rem;
+.post-info-item {
+  gap: 1rem;
 }
 
-.post_categories{
-    margin-bottom: 1rem;
+.post_categories {
+  margin-bottom: 1rem;
 }
 /* End of Post info */
-
 
 /* End of Post area */
