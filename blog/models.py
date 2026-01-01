@@ -9,13 +9,16 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
 
 # Class of posts
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=255)
     content = models.TextField()
-    category=models.ManyToManyField(Category)
+    category = models.ManyToManyField(Category)
     image = models.ImageField(upload_to='blog/', default='blog/default.jpg')
     counted_views = models.IntegerField(default=0)
     status = models.BooleanField(default=0)
