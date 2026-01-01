@@ -72,6 +72,9 @@
   margin-bottom: 1rem;
   gap: 1rem;
 }
+.post_categories a,.post_categories a:visited{
+  color: var(--clr-Deep-Plum);
+}
 /* End of Post info */
 
 /* Post Content */
