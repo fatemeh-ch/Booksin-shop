@@ -27,8 +27,14 @@
   font-size: 1.5rem;
 }
 /* End of Blog Title*/
-
+.main_content{
+  padding: 4rem;
+}
 /* Post area */
+
+.posts_area{
+  margin-right: 2rem;
+}
 
 /* Single Post */
 
@@ -128,3 +134,11 @@
 /* End of Post Content */
 
 /* End of Post area */
+
+/* Widget bar */
+
+.widget-bar{
+  border: 1px solid var(--clr-gray);
+}
+
+/* End of Widget bar */

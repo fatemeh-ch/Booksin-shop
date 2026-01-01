@@ -19,9 +19,6 @@
 <!-- Main Content -->
 <main class="main_content d-flex">
 
-    <!-- Container -->
-    <div class="container">
-
         <!-- Posts Area -->
         <section class="posts_area d-flex column-flex">
             {% for post in posts %}
@@ -33,7 +30,7 @@
                     <!-- Post Categories  -->
                     <div class="post_categories">
                         {% for cat in post.category.all %}
-                         <a href="#">
+                        <a href="#">
                             {{cat.name}}{% if not forloop.last %} , {% endif %}
                         </a>
                         {% endfor %}
@@ -80,7 +77,7 @@
                     <!-- Post description -->
                     <div class="post_description">
                         <p>
-                           {{post.content|truncatechars:100}}
+                            {{post.content|truncatechars:100}}
                         </p>
                     </div>
 
@@ -99,8 +96,12 @@
         <!-- End of Post Area -->
 
         <!-- Widget Bar -->
+        <div class="widget-bar d-flex column-flex">
+            <section class="blog-writer d-flex column-flex">
+                
+            </section>
+        </div>
         <!-- End of Widget Bar -->
-    </div>
 </main>
 
 <!-- End of Main Content -->
