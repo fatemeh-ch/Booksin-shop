@@ -13,3 +13,5 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ('status', 'author')
     ordering = ('-created_date',)
     search_fields = ['title']
+
+admin.site.register(Post,PostAdmin)
