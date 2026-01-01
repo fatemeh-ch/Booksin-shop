@@ -24,7 +24,7 @@
 
         <!-- Posts Area -->
         <section class="posts_area d-flex column-flex">
-
+            {% for post in posts %}
             <!-- Single Post -->
             <article class="single_post d-flex">
 
@@ -42,19 +42,19 @@
 
                     <!-- Post Author -->
                     <a href="#" class="post_author d-flex flex-end post-info-item">
-                        <p>Fatemeh</p>
+                        <p>{{post.author.username.title}}</p>
                         <i class="fa-regular fa-user"></i>
                     </a>
 
                     <!-- Post Published date -->
                     <div class="post_published_date d-flex align-items-center flex-end post-info-item">
-                        <p>12 Dec,2025</p>
+                        <p>{{post.published_date|date:'Y/M/d'}}</p>
                         <i class="fa-regular fa-calendar-days"></i>
                     </div>
 
                     <!-- Counted Views -->
                     <div class="post_views d-flex flex-end post-info-item">
-                        <p>0 Views</p>
+                        <p>{{post.counted_views}} Views</p>
                         <i class="fa-regular fa-eye"></i>
                     </div>
 
@@ -66,14 +66,14 @@
 
                     <!-- Post image   -->
                     <div class="post-image">
-                        <img src="{% static 'images/Blog/Programming_post.jpg' %}" alt="Django-book">
+                        <img src="{{post.image.url}}" alt="Django-book">
                     </div>
 
                     <!-- Post Title -->
                     <div class="post-title">
                         <a href="#">
                             <h3>
-                                5 Books Every Developer Should Read!
+                                {{post.title}}
                             </h3>
                         </a>
                     </div>
@@ -81,10 +81,7 @@
                     <!-- Post description -->
                     <div class="post_description">
                         <p>
-                            Being a great developer is about more than just writing code.
-                            The right books can help you <br>
-                            think better, write cleaner code,
-                            and build habits that support long-term growth.
+                           {{post.content|truncatechars:100}}
                         </p>
                     </div>
 
@@ -98,7 +95,7 @@
             </article>
 
             <!-- End of Single Post -->
-
+            {% endfor %}
         </section>
         <!-- End of Post Area -->
 
