@@ -40,6 +40,7 @@
 
 .single_post {
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Icons */
@@ -92,6 +93,10 @@
 .post-content .post-image img {
   width: 40rem;
   height: 20rem;
+}
+.single-latest-post{
+  gap: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 /* Post title */

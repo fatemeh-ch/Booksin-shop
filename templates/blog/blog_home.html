@@ -115,21 +115,23 @@
             </p>
         </section>
         <!-- End of Blog writer -->
-         
+
         <!-- Latest posts -->
-         <section class="latest-posts d-flex column-flex">
+        <section class="latest-posts d-flex column-flex">
             <h4 class="widget-bar-title">Latest posts</h4>
             <!-- Latest posts items -->
-            <div class="latest-p d-flex">
+            <div class="latest-p d-flex column-flex">
                 {% for post in posts %}
-                <img src="{{post.image.url}}" alt="post-photo" class="post-photo">
-                <div class="post-details d-flex column-flex justify-content-center">
-                    <p>{{post.title|truncatechars:15}}</p>
-                    <p>{{post.published_date|date:"d M"}}</p>
+                <div class="single-latest-post d-flex">
+                    <img src="{{post.image.url}}" alt="post-photo" class="post-photo">
+                    <div class="post-details d-flex column-flex justify-content-center">
+                        <p>{{post.title|truncatechars:15}}</p>
+                        <p>{{post.published_date|date:"d M"}}</p>
+                    </div>
                 </div>
                 {% endfor %}
             </div>
-         </section>
+        </section>
         <!-- End of Latest posts -->
     </div>
     <!-- End of Widget Bar -->
