@@ -286,6 +286,7 @@ RESPONSIVE CODES
 ===============
 */
 
+/* 850px */
 @media screen and (max-width: 850px) {
   /* Main content */
   .main_content {
@@ -317,5 +318,44 @@ RESPONSIVE CODES
   .widget-bar .post-categories {
     width: 100%;
     padding: 2rem 4rem;
+  }
+}
+
+/* 700px */
+@media screen and (max-width: 700px) {
+  /* Main content */
+  .main_content {
+    padding: 2rem 4rem;
+  }
+
+  /* Blog title */
+  .blog_title {
+    font-size: 1.2em;
+  }
+
+  /* Post categories */
+  .post_categories a {
+    font-size: 0.9rem;
+  }
+  .post_info {
+    justify-content: flex-start;
+  }
+
+  .single_post p {
+    color: var(--clr-Deep-Plum);
+    font-size: 0.8rem;
+  }
+  .single_post .fa-regular {
+    font-size: 1rem;
+  }
+
+  /* Post content */
+  .post-content .post-image img {
+    height: 13rem;
+  }
+  .view_more a {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.8rem;
   }
 }
