@@ -254,10 +254,14 @@
 .widget-bar .post-categories .categories {
   margin-top: 2rem;
 }
+.widget-bar .post-categories .categories{
+  gap: 1rem;
+}
 .widget-bar .post-categories .categories li a {
   color: var(--clr-Deep-Plum);
   border-bottom: 1px dotted var(--clr-Deep-Plum);
   padding-bottom: 0.5rem;
+  font-size: 0.8rem;
 }
 .widget-bar .post-categories .categories li:hover a {
   color: var(--clr-Dusty-Pink);
