@@ -1,12 +1,14 @@
 <!-- Post Categories -->
 <section class="post-categories d-flex column-flex">
     <h4 class="widget-bar-title">Posts categories</h4>
-    <ul class="categories">
+    <ul class="categories d-flex column-flex">
+        {% for cat_name , count in categories.items %}
         <li><a href="#" class="d-flex justify-content-space-between">
-                <p>iot</p>
-                <p>10</p>
+                <p>{{cat_name}}</p>
+                <p>{{count}}</p>
             </a>
         </li>
+        {% endfor %}
     </ul>
 </section>
 <!-- End of Post Categories -->

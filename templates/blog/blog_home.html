@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load blog_tags %}
+
 {% load static %}
 
 {% block extra_css %}
@@ -103,7 +105,7 @@
 
         {% include 'blog/latestposts.html' %}
 
-        {% include 'blog/post-categories.html' %}
+        {% post_categories %}
     </div>
     <!-- End of Widget Bar -->
 </main>
