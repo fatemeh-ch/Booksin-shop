@@ -393,3 +393,25 @@ RESPONSIVE CODES
     flex-direction: column;
   }
 }
+
+/* 400px */
+@media screen and (max-width: 400px) {
+  .blog_title {
+    font-size: 0.8rem;
+  }
+
+  /* Post area */
+  .post-content .post-image img {
+    height: 10rem;
+  }
+  .post-content .post-title h3 {
+    color: var(--clr-Deep-Plum);
+    font-size: 0.8rem;
+  }
+
+  /* Widget bar */
+  .writer-img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
