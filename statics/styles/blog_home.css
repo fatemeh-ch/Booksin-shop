@@ -359,3 +359,20 @@ RESPONSIVE CODES
     font-size: 0.8rem;
   }
 }
+
+/* 600px */
+@media screen and (max-width: 600px) {
+  .blog_title {
+    font-size: 1em;
+  }
+
+  /* Main content */
+  .main_content {
+    padding: 2rem;
+  }
+
+  /* Post area */
+  .single_post {
+    gap: 2rem;
+  }
+}
