@@ -212,8 +212,8 @@
 .blog-writer .about-writer {
   text-align: justify;
   font-size: 0.8rem;
-  padding: 0 3rem;
-  margin-bottom: 2rem;
+  padding: 0 4rem;
+  margin: 2rem 0;
 }
 /* End of Writer section */
 
@@ -259,13 +259,11 @@
 }
 .widget-bar .post-categories .categories li a {
   color: var(--clr-Deep-Plum);
-  border-bottom: 1px dotted var(--clr-Deep-Plum);
   padding-bottom: 0.5rem;
   font-size: 0.8rem;
 }
 .widget-bar .post-categories .categories li:hover a {
   color: var(--clr-Dusty-Pink);
-  border-bottom: 1px dotted var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
