@@ -4,7 +4,7 @@
     <ul class="categories d-flex column-flex">
         {% for cat_name , count in categories.items %}
         <li><a href="#" class="d-flex justify-content-space-between">
-                <p>{{cat_name}}</p>
+                <p>{{cat_name|title}}</p>
                 <p>{{count}}</p>
             </a>
         </li>

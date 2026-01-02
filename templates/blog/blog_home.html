@@ -33,7 +33,7 @@
                 <div class="post_categories d-flex column-flex flex-end">
                     {% for cat in post.category.all %}
                     <a href="#">
-                        {{cat.name}}
+                        {{cat.name|title}}
                     </a>
                     {% endfor %}
                 </div>
