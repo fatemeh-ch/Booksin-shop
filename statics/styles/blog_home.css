@@ -10,6 +10,9 @@
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-space-between{
+  justify-content: space-between;
+}
 .flex-end {
   justify-content: flex-end;
 }
@@ -231,5 +234,26 @@
 }
 
 /* End of Latest posts */
+
+/* Categories */
+
+.widget-bar .post-categories .categories{
+  margin-top: 1.5rem;
+}
+.widget-bar .post-categories .categories li a{
+  color: var(--clr-Deep-Plum);
+  border-bottom: 1px dotted var(--clr-Deep-Plum);
+  padding-bottom: 0.5rem;
+}
+.widget-bar .post-categories .categories li:hover a{
+  color: var(--clr-Dusty-Pink);
+  border-bottom: 1px dotted var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* End of Categories */
 
 /* End of Widget bar */
