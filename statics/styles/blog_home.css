@@ -257,18 +257,18 @@
 
 /* Categories */
 
-.widget-bar .post-categories .categories {
+.widget-bar .posts-categories .categories {
   margin-top: 2rem;
 }
-.widget-bar .post-categories .categories {
+.widget-bar .posts-categories .categories {
   gap: 1rem;
 }
-.widget-bar .post-categories .categories li a {
+.widget-bar .posts-categories .categories li a {
   color: var(--clr-Deep-Plum);
   padding-bottom: 0.5rem;
   font-size: 0.8rem;
 }
-.widget-bar .post-categories .categories li:hover a {
+.widget-bar .posts-categories .categories li:hover a {
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -315,7 +315,7 @@ RESPONSIVE CODES
   }
 
   /* Posts categories */
-  .widget-bar .post-categories {
+  .widget-bar .posts-categories {
     width: 100%;
     padding: 2rem 4rem;
   }
@@ -374,5 +374,22 @@ RESPONSIVE CODES
   /* Post area */
   .single_post {
     gap: 2rem;
+  }
+}
+
+/* 500px */
+@media screen and (max-width: 500px) {
+  .post_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .post_categories {
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .single_post {
+    flex-direction: column;
   }
 }
