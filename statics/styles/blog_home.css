@@ -165,6 +165,12 @@
   padding: 2rem 0;
 }
 
+/* Search box */
+
+#slider_search_box {
+  display: none;
+}
+
 /* Writer section */
 .blog-writer {
   gap: 1rem;
@@ -254,7 +260,7 @@
 .widget-bar .post-categories .categories {
   margin-top: 2rem;
 }
-.widget-bar .post-categories .categories{
+.widget-bar .post-categories .categories {
   gap: 1rem;
 }
 .widget-bar .post-categories .categories li a {
@@ -273,3 +279,43 @@
 /* End of Categories */
 
 /* End of Widget bar */
+
+/*
+===============
+RESPONSIVE CODES
+===============
+*/
+
+@media screen and (max-width: 850px) {
+  /* Main content */
+  .main_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Post content */
+  .post-content .post-image img {
+    height: 15rem;
+  }
+
+  /* Search box */
+  #slider_search_box {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  #slider_search_box form {
+    position: relative;
+  }
+
+  /* Widget bar */
+  .latest-posts {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+
+  /* Posts categories */
+  .widget-bar .post-categories {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+}
