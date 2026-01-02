@@ -95,44 +95,13 @@
     </section>
     <!-- End of Post Area -->
 
-    <!-- Widget Bar -->
+    <!-- Widget Bar --> 
 
-    <!-- Blog writer -->
     <div class="widget-bar d-flex column-flex align-items-center">
-        <section class="blog-writer d-flex column-flex align-items-center">
-            <img src="{% static 'images/writer.jpg' %}" alt="writer-photo" class="writer-img">
-            <h3 class="writer-name">Fatemeh</h3>
-            <p class="writer-title">Blog writer</p>
-            <div class="socials d-flex justify-content-center">
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-solid fa-x"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <p class="about-writer">
-                Written by Fatemeh, a curious mind who enjoys turning ideas into words. She writes with clarity,
-                intention, and a genuine interest in sharing what she learns along the way.
-            </p>
-        </section>
-        <!-- End of Blog writer -->
 
-        <!-- Latest posts -->
-        <section class="latest-posts d-flex column-flex">
-            <h4 class="widget-bar-title">Latest posts</h4>
-            <!-- Latest posts items -->
-            <div class="latest-p d-flex column-flex">
-                {% for post in posts %}
-                <div class="single-latest-post d-flex">
-                    <img src="{{post.image.url}}" alt="post-photo" class="post-photo">
-                    <div class="post-details d-flex column-flex justify-content-center">
-                        <p>{{post.title|truncatechars:15}}</p>
-                        <p>{{post.published_date|date:"d M"}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
-        <!-- End of Latest posts -->
+        {% include 'blog/blog_writer' %}
+
+        
 
         <!-- Post Categories -->
          <section class="post-categories d-flex column-flex">
