@@ -3,6 +3,7 @@ from blog.models import Post, Category
 
 register = template.Library()
 
+
 @register.inclusion_tag('blog/post-categories.html')
 def post_categories():
     posts = Post.objects.filter(status=1)
@@ -11,3 +12,9 @@ def post_categories():
     for name in categories:
         cat_dict[name] = posts.filter(category=name).count()
     return {'categories': cat_dict}
+
+
+@register.inclusion_tag('blog/latestposts.html')
+def latest_posts():
+    posts = Post.objects.filter(status=1).order_by('-published_date')[:3]
+    return {'posts': posts}
