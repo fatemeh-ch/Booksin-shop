@@ -20,7 +20,7 @@
 <main class="main_content d-flex">
 
     <!-- Posts Area -->
-    <section class="posts_area d-flex column-flex">
+    <section class="posts_area d-flex column-flex align-items-center">
         {% for post in posts %}
         <!-- Single Post -->
         <article class="single_post d-flex">
@@ -28,10 +28,10 @@
             <!-- Post Info -->
             <div class="post_info d-flex column-flex justify-content-center">
                 <!-- Post Categories  -->
-                <div class="post_categories">
+                <div class="post_categories d-flex column-flex flex-end">
                     {% for cat in post.category.all %}
                     <a href="#">
-                        {{cat.name}}{% if not forloop.last %} , {% endif %}
+                        {{cat.name}}
                     </a>
                     {% endfor %}
                 </div>
@@ -44,7 +44,7 @@
 
                 <!-- Post Published date -->
                 <div class="post_published_date d-flex align-items-center flex-end post-info-item">
-                    <p>{{post.published_date|date:'Y / M / d'}}</p>
+                    <p>{{post.published_date|date:' M / d'}}</p>
                     <i class="fa-regular fa-calendar-days"></i>
                 </div>
 
