@@ -1,57 +1,101 @@
-/* Body */
+/* 
+====
+Body 
+====
+*/
+
 body {
   background-color: var(--clr-Cream-White);
   height: 100dvh;
 }
-/* Login container */
+
+
+/* 
+===============
+Login container
+===============
+ */
+
 .login_container {
   width: 50%;
   margin: 3rem auto;
   padding: 2rem 1rem 3rem 1rem;
   background-color: var(--clr-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-shadow: var(--box-shodow);
 }
-/* End of Login container */
 
-/* Logo */
+/* 
+======================
+End of Login container
+======================
+ */
+
+
+/* 
+====
+Logo
+====
+ */
+
 .login_container .logo {
-  display: flex;
-  align-items: center;
   gap: 2rem;
 }
 
-/* Logo image */
+
+/* Logo image*/
 .login_container .logo img {
   width: 4rem;
   height: 4rem;
 }
 
+
 /* Logo title */
+
 .login_container .logo .logo_title {
   font-size: 3rem;
   color: var(--clr-Deep-Plum);
 }
-/* End of Logo */
 
-/* Main title */
+/* 
+============
+End of Logo 
+============
+*/
+
+
+/* 
+==========
+Main title 
+==========
+*/
+
 .login_container .main_title {
   margin-top: 2rem;
   color: var(--clr-Dusty-Pink);
 }
-/* End of Main title */
+/*
+=================
+End of Main title 
+=================
+*/
 
-/* Login form */
+
+/* 
+==========
+Login form
+==========
+*/
 .login_container .login_form {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
   gap: 0.8rem;
   width: 80%;
 }
-/* Form inputs */
+
+/* 
+===========
+Form inputs
+============
+*/
 .login_form .form_inputs {
   width: 100%;
   padding: 1rem 1rem 1rem;
@@ -63,10 +107,12 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 /* :Focus */
 .login_form .form_inputs:focus {
   background-color: var(--clr-Cream-White);
 }
+
 /* :Hover */
 .login_form .form_inputs:hover {
   background-color: var(--clr-Cream-White);
@@ -76,6 +122,7 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
+
 /* ::Placeholder */
 .login_form .form_inputs::placeholder {
   color: var(--clr-Deep-Plum);
@@ -111,4 +158,139 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-/* End of Login form */
+/* 
+==================
+End of Login form 
+==================
+*/
+
+
+/*
+================
+RESPONSIVE CODES
+================
+*/
+
+/* 800px */
+
+@media screen and (max-width: 800px) {
+  .login_container {
+    width: 60%;
+  }
+
+  /* Logo */
+  .login_container .logo {
+    gap: 1rem;
+  }
+
+  /* Logo image */
+  .login_container .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 2.3rem;
+  }
+
+  /* End of logo */
+
+  /* Main title */
+
+  .login_container .main_title {
+    font-size: 1.3rem;
+  }
+
+  /* Login form */
+
+  .login_form .form_inputs {
+    padding: 0.8rem 1rem;
+  }
+  
+  .form_icons {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* 700px */
+
+@media screen and (max-width: 700px) {
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 2.1rem;
+  }
+
+  /* Logo image */
+
+  .login_container .logo img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  /* Main title */
+
+  .login_container .main_title {
+    font-size: 1.2rem;
+  }
+
+  /* Login form */
+
+  .login_container .login_form {
+    margin-top: 2rem;
+  }
+
+  .login_form .form_inputs {
+    padding: 0.7rem 1rem;
+  }
+
+  .login_form .form_inputs::placeholder {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* 500px */
+
+@media screen and (max-width: 500px) {
+  /* Logo title */
+
+  .login_container .logo .logo_title {
+    font-size: 1.5rem;
+  }
+
+  /* Logo image */
+
+  .login_container .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Main title */
+
+  .login_container .main_title {
+    margin-top: 1.5rem;
+  }
+
+  .login_container .main_title {
+    font-size: 1rem;
+  }
+
+  /* Login form */
+
+  .login_form .form_inputs {
+    padding: 0.5rem 1rem;
+  }
+
+  .form_icons {
+    font-size: 1.1rem;
+  }
+
+  .submit_btn {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+  }
+}
