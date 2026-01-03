@@ -347,6 +347,11 @@ Footer
   color: var(--clr-Deep-Plum);
 }
 
+.legal{
+  gap: 1.5rem;
+  height: fit-content;
+}
+
 .footer .social_medias .fa-telegram,
 .fa-x,
 .fa-instagram,
