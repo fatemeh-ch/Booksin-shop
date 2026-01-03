@@ -1,25 +1,3 @@
-/* Common styles */
-.d-flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-.justify-content-space-between {
-  justify-content: space-between;
-}
-.flex-end {
-  justify-content: flex-end;
-}
-.column-flex {
-  flex-direction: column;
-}
-
 /* Blog Title*/
 .blog_title {
   background-color: var(--clr-Mauve-Mist);
@@ -141,12 +119,12 @@
 }
 .view_more a {
   padding: 0.7rem 2rem;
-  background-color: var(--clr-Dusty-Pink);
+  background-color: var(--clr-Mauve-Mist);
   color: var(--clr-white);
   font-weight: 700;
 }
 .view_more a:hover {
-  background-color: var(--clr-Mauve-Mist);
+  background-color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
