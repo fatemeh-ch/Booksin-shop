@@ -84,7 +84,7 @@
 
         <!-- Responsive Navigation -->
         <nav>
-            <ul class="navigation_bar_res position-fixed">
+            <ul class="navigation_bar_res position-fixed display-none">
                 <li>
                     <a href="{% url 'core:home' %}" class="d-flex column-flex align-items-center"><i class="fa-regular fa-house"></i>
                         <p>Home</p>
@@ -125,7 +125,7 @@
             </section>
 
             <!-- Social media -->
-            <section class="social_medias footer_items d-flex align-items-center">
+            <section class="social_medias footer_items d-flex column-flex">
                 <h6 class="footer_section_titles">Social Medias</h6>
                 <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
                 <a href="#"><i class="fa-solid fa-x"></i> X</a>
@@ -134,14 +134,14 @@
             </section>
 
             <!-- Legal -->
-            <section class="footer_items legal footer_items_hover">
+            <section class="footer d-flex legal footer_items_hover column-flex">
                 <h6 class="footer_section_titles">Legal</h6>
                 <a href="#">Terms and Conditions</a>
                 <a href="#">Privacy Policy</a>
             </section>
 
             <!-- Help -->
-            <section class="footer_items help footer_items_hover">
+            <section class="footer_items help footer_items_hover display-none">
                 <h6 class="footer_section_titles">Help</h6>
                 <a href="{% url 'core:about' %}">About us</a>
                 <a href="{% url 'core:contact' %}">Contact us</a>
