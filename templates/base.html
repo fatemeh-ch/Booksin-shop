@@ -33,23 +33,23 @@
         <!-- Header -->
         <header class="header">
             <!-- Top header -->
-            <div class="top_header">
+            <div class="top_header d-flex justify-content-space-between">
                 <!-- Logo -->
-                <div class="logo">
+                <div class="logo d-flex align-items-center">
                     <img src="{% static 'images/logo.png' %}" alt="Booksin-logo">
                     <h1>Booksin</h1>
                 </div>
                 <!-- Search_box -->
                 <div class="search_box">
-                    <form action="#" method="post">
+                    <form action="#" method="post" class="d-flex position-relative">
                         <input type="text" name="inpt_serchbox" placeholder="Search...">
-                        <button>
+                        <button class="position-absolute">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
                 </div>
                 <!-- Top Header icons -->
-                <div class="top_header_icons">
+                <div class="top_header_icons d-flex align-items-center">
                     <a href="{% url 'accounts:login' %}"><i class="fa-regular fa-user"></i></a>
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                     <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
@@ -59,7 +59,7 @@
             <!-- Navigation -->
             <div class="navigation">
                 <nav>
-                    <ul class="navigation_bar">
+                    <ul class="navigation_bar d-flex align-items-center">
                         <li>
                             <a href="#category"><i class="fa-solid fa-table-list"></i> Category</a>
                         </li>
@@ -84,9 +84,9 @@
 
         <!-- Responsive Navigation -->
         <nav>
-            <ul class="navigation_bar_res">
+            <ul class="navigation_bar_res position-fixed">
                 <li>
-                    <a href="{% url 'core:home' %}"><i class="fa-regular fa-house"></i>
+                    <a href="{% url 'core:home' %}" class="d-flex column-flex align-items-center"><i class="fa-regular fa-house"></i>
                         <p>Home</p>
                     </a>
                 </li>
@@ -113,10 +113,10 @@
     {% endblock %}
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer d-flex">
+        <div class="container justify-content-space-between">
             <!-- Quick access -->
-            <section class="quick_access footer_items footer_items_hover">
+            <section class="quick_access footer_items footer_items_hover d-flex column-flex">
                 <h6 class="footer_section_titles">Quick access</h6>
                 <a href="{% url 'core:home' %}">Home</a>
                 <a href="#category">Category</a>
@@ -125,7 +125,7 @@
             </section>
 
             <!-- Social media -->
-            <section class="social_medias footer_items">
+            <section class="social_medias footer_items d-flex align-items-center">
                 <h6 class="footer_section_titles">Social Medias</h6>
                 <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
                 <a href="#"><i class="fa-solid fa-x"></i> X</a>
