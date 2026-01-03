@@ -8,14 +8,17 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
+
+
 <!-- Slider -->
-<div class="slider">
+<div class="slider d-flex justify-content-center align-items-center">
     <button class="shop_now">
         <b>Shop Now</b>
         <i class="fa-solid fa-chevron-right"></i>
     </button>
+
     <!-- Search_box -->
-    <div class="search_box" id="slider_search_box">
+    <div class="search_box display-none position-relative" id="slider_search_box">
         <form action="#" method="post">
             <input type="text" name="inpt_serchbox" placeholder="Search...">
             <button>
@@ -25,49 +28,58 @@
     </div>
 </div>
 <!-- End of Slider -->
+
+
 <div class="container">
+
     <!-- Category -->
-    <section class="category" id="category">
+    <section class="category d-flex column-flex align-items-center" id="category">
         <h2 class="category_title">Category</h2>
-        <div class="categories">
+        <div class="categories d-flex justify-content-space-between">
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/romance.jpg' %}" alt="romance">
                     <p>Romance</p>
                 </a>
             </div>
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/Horror.jpg' %}" alt="Horror">
                     <p>Horror</p>
                 </a>
             </div>
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/history.jpg' %}" alt="Historical">
                     <p>History</p>
                 </a>
             </div>
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/psychology.jpg' %}" alt="psychology">
                     <p>Psychology</p>
                 </a>
             </div>
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/programming.jpg' %}" alt="programming">
                     <p>Programming</p>
                 </a>
             </div>
+
             <!-- Category item -->
             <div class="category_item">
-                <a href="#">
+                <a href="#" class="d-flex column-flex align-items-center">
                     <img src="{% static 'images/category/Mystery.jpg' %}" alt="Mystery">
                     <p>Mystery</p>
                 </a>
@@ -79,80 +91,88 @@
     <!-- Best sells -->
     <div class="best_sells" id="best_sells">
         <section>
+
             <!-- Best sell title -->
             <h3 class="best_sells_title">
                 Best sells
             </h3>
+
             <!-- Best sells items -->
-            <div class="best_sells_items">
+            <div class="best_sells_items justify-content-center">
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/It_ends_with_us.jpg' %}" alt="It ends with us">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Colleen Hoover</b></p>
                             <p class="book_name">It ends with us</p>
                         </div>
                     </div>
                 </a>
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/They_both_die_at_the_end.jpg' %}"
                                 alt="They both die at the end">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Adam Slivera</b></p>
                             <p class="book_name">They both die at the end</p>
                         </div>
                     </div>
                 </a>
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/It_Starts_with_Us.jpg' %}" alt="It Starts with Us">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Colleen Hoover</b></p>
                             <p class="book_name">It Starts with Us</p>
                         </div>
                     </div>
                 </a>
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/You_reached_sam.jpg' %}" alt="You reached sam">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Dustin Tauo</b></p>
                             <p class="book_name">You reached sam</p>
                         </div>
                     </div>
                 </a>
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/daisy_darker.jpg' %}" alt="daisy darker">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Alice Fenny</b></p>
                             <p class="book_name">Daisy darker</p>
                         </div>
                     </div>
                 </a>
+
                 <!-- Best sells item -->
                 <a href="#">
-                    <div class="best_sell_item">
+                    <div class="best_sell_item d-flex column-flex justify-content-center align-items-center">
                         <div class="pic">
                             <img src="{% static 'images/Posts/Clockwork_princess.jpg' %}" alt="Clockwork princess">
                         </div>
-                        <div class="descriptions">
+                        <div class="descriptions d-flex column-flex align-items-center">
                             <p class="author"><b>Cassandra Clare</b></p>
                             <p class="book_name">Clockwork Princess</p>
                         </div>
@@ -162,10 +182,11 @@
         </section>
     </div>
     <!-- End of Best sells -->
+
 </div>
 
 <!-- Daily quote -->
-<div class="daily_quote">
+<div class="daily_quote d-flex column-flex justify-content-center">
     <h4 class="quote_title">
         "I do believe something very magical can happen when you read a book"
     </h4>
@@ -176,56 +197,63 @@
 <!-- End Daily quote -->
 
 <div class="container">
+
     <!-- Popular authors -->
-    <div class="popular_authors">
+    <div class="popular_authors d-flex column-flex align-items-center">
         <h5 class="popular_authors_title">
             Popular Authors
         </h5>
         <!-- Authors group -->
-        <div class="authors" id="popular_authors">
+        <div class="authors d-flex" id="popular_authors">
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/Adma_silvera.jpg' %}" alt="Adma silvera">
                     <p class="author_name">Adma Silvera</p>
                     <p class="author_book">2 Books</p>
                 </div>
             </a>
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/JK_Rowling.jpg' %}" alt="JK Rowling">
                     <p class="author_name">JK Rowling</p>
                     <p class="author_book">3 Books</p>
                 </div>
             </a>
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/mark_manson.jpg' %}" alt="mark manson">
                     <p class="author_name">Mark Manson</p>
                     <p class="author_book">5 Books</p>
                 </div>
             </a>
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/pone_moqimi.jpg' %}" alt="pone moqimi">
                     <p class="author_name">Poneh Moqimi</p>
                     <p class="author_book">1 Book</p>
                 </div>
             </a>
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/zoya_pirzad.jpg' %}" alt="zoya pirzad">
                     <p class="author_name">Zoya Pirzad</p>
                     <p class="author_book">2 Books</p>
                 </div>
             </a>
+
             <!-- Author -->
             <a href="#">
-                <div class="p_author">
+                <div class="p_author d-flex column-flex align-items-center">
                     <img src="{% static 'images/authors/FreidaـMcFadden.jpg' %}" alt="Freida McFadden">
                     <p class="author_name">Freida McFadden</p>
                     <p class="author_book">7 Books</p>
@@ -234,5 +262,6 @@
         </div>
     </div>
     <!-- End of Popular authors -->
+
 </div>
 {% endblock %}

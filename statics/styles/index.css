@@ -1,4 +1,9 @@
-/* Slider */
+/* 
+======
+Slider 
+======
+*/
+
 .slider {
   height: 30rem;
   background-image: url(../images/slider.jpg);
@@ -8,13 +13,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 #slider_search_box {
   display: none;
 }
+
 /* Shop now button */
 .slider .shop_now {
   height: 3rem;
@@ -28,6 +32,7 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
+
 .slider .shop_now:hover {
   background-color: var(--clr-Dusty-Pink);
   color: var(--clr-white);
@@ -38,31 +43,34 @@
   -o-transition: var(--transition);
 }
 
-/* Slider Searchbox */
-#slider_search_box form{
-  position: relative;
-}
-
-/* End of Slider */
-#slider_search_box button{
+#slider_search_box button {
   position: absolute;
   right: 0;
 }
-/* Category */
+
+/* 
+=============
+End of Slider
+=============
+ */
+
+/* 
+========
+Category 
+========
+*/
+
 .category {
   overflow-x: auto;
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 2rem;
 }
+
 .category .categories {
   width: 100%;
   margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
 }
+
 /* Category Title */
 .category .category_title {
   padding-bottom: 1rem;
@@ -76,12 +84,11 @@
 .category .category_item {
   box-shadow: var(--box-shodow);
 }
+
 .category .category_item a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
+
 .category .category_item:hover a p {
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
@@ -90,22 +97,36 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
+
 .category .category_item img {
   width: 8rem;
   height: 10rem;
 }
+
 .category .category_item p {
   color: var(--clr-black);
   font-size: 1rem;
   font-weight: bold;
 }
-/* End of Category */
 
-/* Best sells */
+/* 
+===============
+End of Category 
+===============
+*/
+
+/* 
+==========
+Best sells 
+==========
+*/
+
 .best_sells {
   margin-top: 5rem;
 }
+
 /* Best sells Title */
+
 .best_sells .best_sells_title {
   margin: 0 auto;
   font-size: 2rem;
@@ -115,41 +136,39 @@
   color: var(--clr-Deep-Plum);
   margin-bottom: 2rem;
 }
+
 /* Best sell items */
 .best_sells .best_sells_items {
   margin-top: 1rem;
   padding-top: 1rem;
   display: grid;
   gap: 2.1rem;
-  justify-content: center;
   grid-template-columns: repeat(6, auto);
 }
+
 /* Best sells item */
 .best_sells .best_sells_items .best_sell_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 1rem;
 }
+
 /* Best sells item image */
 .best_sells .best_sells_items .best_sell_item img {
   width: 8rem;
   height: 10rem;
   box-shadow: var(--box-shodow);
 }
+
 /* Best sells item Descriptions */
 .best_sells .best_sells_items .best_sell_item .descriptions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
+
 .best_sells .best_sells_items .best_sell_item .descriptions .author {
   margin-top: 1rem;
   color: var(--clr-Deep-Plum);
   font-size: 1rem;
 }
+
 .best_sells .best_sells_items a:hover .best_sell_item .descriptions .author {
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
@@ -158,12 +177,14 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
+
 .best_sells .best_sells_items .best_sell_item .descriptions .book_name {
   color: var(--clr-Dusty-Pink);
   font-weight: bold;
   padding-bottom: 0.3rem;
   text-align: center;
 }
+
 .best_sells .best_sells_items a:hover .best_sell_item .descriptions .book_name {
   border-bottom: 2px solid var(--clr-Dusty-Pink);
   color: var(--clr-Deep-Plum);
@@ -173,9 +194,19 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-/* End of best sells */
 
-/* Daily quote */
+/* 
+=================
+End of best sells 
+=================
+*/
+
+/* 
+===========
+Daily quote 
+===========
+*/
+
 .daily_quote {
   margin: 3.5rem 0;
   background-image: url(../images/quote.jpg);
@@ -185,23 +216,32 @@
   background-attachment: fixed;
   background-blend-mode: color;
   height: 15rem;
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
   padding-right: 3rem;
   gap: 1rem;
   color: var(--clr-white);
 }
+
 .daily_quote .quote_title {
   font-size: 1.3rem;
 }
+
 .daily_quote .quote_author {
   font-size: 1.3rem;
 }
-/* End of Daily quote */
 
-/* Popular authors */
+/* 
+==================
+End of Daily quote
+==================
+ */
+
+/* 
+===============
+Popular authors 
+===============
+*/
+
 .popular_authors .popular_authors_title {
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -210,28 +250,26 @@
   width: fit-content;
   padding: 1rem;
 }
+
 .popular_authors {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 1rem;
 }
+
 .popular_authors .authors {
-  display: flex;
   gap: 5rem;
   margin-top: 1rem;
 }
+
 /* Author */
 .popular_authors a .p_author {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
+
 .popular_authors .authors a .p_author .author_name {
   color: var(--clr-Deep-Plum);
   text-align: center;
 }
+
 .popular_authors .authors a .p_author img {
   width: 6rem;
   height: 6rem;
@@ -241,7 +279,13 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .popular_authors .authors a .p_author .author_book {
   color: var(--clr-Dusty-Pink);
 }
-/* End of Popular authors */
+
+/* 
+======================
+End of Popular authors
+======================
+ */
