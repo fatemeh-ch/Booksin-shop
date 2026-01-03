@@ -9,7 +9,6 @@ Contact
   margin: 5rem 0 8rem;
 }
 
-
 /* 
 =============
 Contact intro 
@@ -32,20 +31,17 @@ Contact intro
   font-size: 1.4rem;
 }
 
-
 /* 
 ====================
 End of Contact Intro
 ====================
 */
 
-
 /* 
 ============
 Contact info 
 ============
 */
-
 
 /* 
 ===============
@@ -100,13 +96,11 @@ Info
   color: var(--clr-Dusty-Pink);
 }
 
-
 /* 
 ===================
 End of Contact item 
 ===================
 */
-
 
 /* 
 ============
@@ -159,13 +153,11 @@ Contact form
   border: 2px solid var(--clr-Dusty-Pink);
 }
 
-
 /* 
 ===================
 End of Contact info 
 ===================
 */
-
 
 /* 
 ==============
@@ -270,6 +262,16 @@ Responsive codes
 /* 576px */
 
 @media screen and (max-width: 576px) {
+
+  /* Main title */
+  
+  .contact_intro .main_title {
+    font-size: 2rem;
+  }
+  .contact_intro .description {
+    font-size: 1rem;
+  }
+
   /* Contact info item */
 
   .contact_info .contact_info_item {
@@ -277,7 +279,7 @@ Responsive codes
   }
 
   /* Submit button */
-  
+
   .contact_button {
     padding: 1rem;
   }
