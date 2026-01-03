@@ -78,6 +78,10 @@ CONTAINER
   justify-content: space-between
 }
 
+.justify-content-center{
+  justify-content: center;
+}
+
 .align-items-center{
   align-items: center;
 }
@@ -92,6 +96,10 @@ CONTAINER
 
 .position-fixed{
   position: fixed;
+}
+
+.display-none{
+  display: none;
 }
 
 
@@ -255,7 +263,6 @@ Responsive Navigation
 =====================
 */
 .navigation_bar_res {
-  display: none;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -356,10 +363,6 @@ Footer
   color: var(--clr-Deep-Plum);
 }
 
-/* Help */
-.footer .help {
-  display: none;
-}
 
 /*
 ================
