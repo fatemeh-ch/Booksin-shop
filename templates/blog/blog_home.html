@@ -28,9 +28,9 @@
         <article class="single_post d-flex">
 
             <!-- Post Info -->
-            <div class="post_info d-flex column-flex justify-content-center">
+            <div class="post_info d-flex column-flex justify-content-center align-items-center">
                 <!-- Post Categories  -->
-                <div class="post_categories d-flex column-flex flex-end">
+                <div class="post_categories d-flex column-flex align-items-flex-start">
                     {% for cat in post.category.all %}
                     <a href="#">
                         {{cat.name|title}}
