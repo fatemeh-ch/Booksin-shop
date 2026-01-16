@@ -196,6 +196,9 @@
 .latest-posts .latest-p .post-details p {
   font-size: 0.7rem;
 }
+.latest-posts .latest-p .post-details p a{
+  color: var(--clr-Deep-Plum);
+}
 .latest-posts .latest-p .post-details p:nth-child(2) {
   color: var(--clr-Warm-Taupe);
 }

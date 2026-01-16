@@ -8,7 +8,7 @@
         <div class="single-latest-post d-flex">
             <img src="{{post.image.url}}" alt="post-photo" class="post-photo">
             <div class="post-details d-flex column-flex justify-content-center">
-                <p>{{post.title|truncatechars:20}}</p>
+                <p><a href="{% url 'blog:single' pid=post.id %}">{{post.title|truncatechars:20}}</a></p>
                 <p>{{post.published_date|date:"d M"}}</p>
             </div>
         </div>
