@@ -32,11 +32,7 @@
   color: var(--clr-Warm-Taupe);
   font-size: 1.2rem;
 }
-/* Post info */
 
-.post_info {
-  gap: 1.2rem;
-}
 
 .single_post p {
   color: var(--clr-Deep-Plum);
@@ -54,28 +50,6 @@
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
 }
-
-/* Styles for every flex item in Post info */
-.post-info-item {
-  gap: 0.5rem;
-}
-
-.post_categories {
-  margin-bottom: 1rem;
-}
-.post_categories a,
-.post_categories a:visited {
-  color: var(--clr-Deep-Plum);
-}
-.post_categories a:hover {
-  color: var(--clr-Dusty-Pink);
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-}
-/* End of Post info */
 
 /* Post Content */
 
