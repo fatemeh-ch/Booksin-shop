@@ -28,35 +28,9 @@
         <article class="single_post d-flex">
 
             <!-- Post Info -->
-            <div class="post_info d-flex column-flex justify-content-center align-items-center">
-                <!-- Post Categories  -->
-                <div class="post_categories d-flex column-flex align-items-flex-start">
-                    {% for cat in post.category.all %}
-                    <a href="#">
-                        {{cat.name|title}}
-                    </a>
-                    {% endfor %}
-                </div>
 
-                <!-- Post Author -->
-                <a href="#" class="post_author d-flex flex-end post-info-item">
-                    <p>{{post.author.username.title}}</p>
-                    <i class="fa-regular fa-user"></i>
-                </a>
+            {% include 'blog/blog_post_info.html' %}
 
-                <!-- Post Published date -->
-                <div class="post_published_date d-flex align-items-center flex-end post-info-item">
-                    <p>{{post.published_date|date:' M / d'}}</p>
-                    <i class="fa-regular fa-calendar-days"></i>
-                </div>
-
-                <!-- Counted Views -->
-                <div class="post_views d-flex flex-end post-info-item">
-                    <p>{{post.counted_views}} Views</p>
-                    <i class="fa-regular fa-eye"></i>
-                </div>
-
-            </div>
             <!-- End of Post Info -->
 
             <!-- Post Content -->
@@ -64,7 +38,7 @@
 
                 <!-- Post image   -->
                 <div class="post-image">
-                    <img src="{{post.image.url}}" alt="Django-book">
+                    <img src="{{post.image.url}}" alt="post-pic">
                 </div>
 
                 <!-- Post Title -->
