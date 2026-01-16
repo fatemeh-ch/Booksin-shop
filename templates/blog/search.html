@@ -1,7 +1,7 @@
 <!-- Search_box -->
 <div class="search_box" id="slider_search_box">
-    <form action="#" method="post">
-        <input type="text" name="inpt_serchbox" placeholder="Search...">
+    <form action="{% url 'blog:search' %}" method="get">
+        <input type="text" name="s" placeholder="Search...">
         <button class="position-absolute">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
