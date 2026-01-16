@@ -10,7 +10,7 @@
     </div>
 
     <!-- Post Author -->
-    <a href="#" class="post_author d-flex flex-end post-info-item">
+    <a href="{% url 'blog:author' author_name=post.author %}" class="post_author d-flex flex-end post-info-item">
         <p>{{post.author.username.title}}</p>
         <i class="fa-regular fa-user"></i>
     </a>
