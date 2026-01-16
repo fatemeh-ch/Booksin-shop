@@ -2,13 +2,48 @@
 
 {% load static %}
 
-{% block extra_css %}
+{% load blog_tags %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'styles/blog_home.css' %}">
+<link rel="stylesheet" href="{% static 'styles/blog_single.css' %}">
 {% endblock %}
 
 {% block title %} single {% endblock %}
 
 
 {% block content %}
+
+<!-- Main content -->
+<main class="single_main_content">
+
+    <!-- Post Area -->
+     <section class="single_post_area d-flex column-flex">
+
+        <!-- Post Photo -->
+         <img src="{% static 'images/Blog/Horror_post.jpg' %}" alt="post-photo" class="post_pic">
+
+         <!-- Post Info -->
+
+
+         <!-- Post Content -->
+
+     </section>
+
+     <!-- Widget Bar -->
+
+    <div class="widget-bar d-flex column-flex align-items-center">
+        
+        {% include 'blog/search.html' %}
+
+        {% include 'blog/blog_writer.html' %}
+
+        {% latest_posts %}
+
+        {% post_categories %}
+    </div>
+    <!-- End of Widget Bar -->
+
+</main>
 
 {% endblock %}

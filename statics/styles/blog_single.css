@@ -1,0 +1,22 @@
+/*
+============
+Main content
+============
+*/
+
+.single_main_content{
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+/* Post Photo */
+main .post_pic{
+    width: 90%;
+}
+
+/*
+===================
+End of Main content
+===================
+*/
