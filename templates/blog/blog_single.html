@@ -17,37 +17,37 @@
 <main class="main_content d-flex">
 
     <!-- Post Area -->
-     <section class="single_post_area d-flex column-flex align-items-center">
+    <section class="single_post_area d-flex column-flex align-items-center">
 
         <!-- Post Photo -->
-         <img src="{{post.image.url}}" alt="post-photo" class="post_pic">
+        <img src="{{post.image.url}}" alt="post-photo" class="post_pic">
 
-         <!-- Post Content -->
+        <!-- Post Content -->
 
-         <div class="post-content d-flex">
+        <div class="post-content d-flex">
 
-         <!-- Post Info -->
-         {% include 'blog/blog_post_info.html' %}
+            <!-- Post Info -->
+            {% include 'blog/blog_post_info.html' %}
 
             <!-- Post detail -->
-             <div class="post_details d-flex column-flex">
+            <div class="post_details d-flex column-flex">
 
                 <!-- Post title -->
                 <h1 class="main-title">{{post.title}}</h1>
 
                 <!-- Post description -->
-                 <div class="post_description d-flex">
+                <div class="post_description d-flex">
                     {{post.content}}
-                 </div>
-             </div>
-          </div>
+                </div>
+            </div>
+        </div>
 
-     </section>
+    </section>
 
-     <!-- Widget Bar -->
+    <!-- Widget Bar -->
 
     <div class="widget-bar d-flex column-flex align-items-center">
-        
+
         {% include 'blog/search.html' %}
 
         {% include 'blog/blog_writer.html' %}
@@ -57,7 +57,8 @@
         {% post_categories %}
     </div>
     <!-- End of Widget Bar -->
-
 </main>
+
+<!-- End of Main Content -->
 
 {% endblock %}
