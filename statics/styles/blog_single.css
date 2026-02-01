@@ -4,19 +4,86 @@ Main content
 ============
 */
 
-.single_main_content{
-    padding: 3rem 5rem;
-    display: grid;
-    grid-template-columns: 75% 25%;
+.main_content {
+  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+/* 
+=========
+Post area 
+=========
+*/
+
+.single_post_area {
+  padding: 1rem 2rem;
 }
 
 /* Post Photo */
-main .post_pic{
-    width: 90%;
+main .post_pic {
+  width: 100%;
 }
+
+/*
+============
+Post Content
+============
+*/
+
+.main-title {
+  color: var(--clr-Deep-Plum);
+  font-size: 1.5rem;
+}
+
+.post-content {
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.post_details {
+  margin-top: 3.5rem;
+  gap: 3rem;
+}
+
+.post_description {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+/*
+===================
+End of Post Content
+===================
+*/
+
+
+/* 
+================
+End of Post area 
+================
+*/
+
 
 /*
 ===================
 End of Main content
 ===================
+*/
+
+
+/*
+==========
+Widget bar
+==========
+*/
+
+.widget-bar .post-details {
+  margin-left: 1rem;
+}
+
+/*
+=================
+End of Widget bar
+=================
 */

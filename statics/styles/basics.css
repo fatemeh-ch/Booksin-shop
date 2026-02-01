@@ -556,7 +556,13 @@ Latest posts
 */
 
 .latest-posts {
+  margin-top: 1rem;
+}
+
+.latest-p {
+  margin-top: 1.5rem;
   padding: 1rem 0;
+  gap: 1rem;
 }
 
 .widget-bar-title {
@@ -565,11 +571,6 @@ Latest posts
   padding: 0.5rem 3.3rem;
   text-align: center;
   font-size: 0.8rem;
-}
-
-.latest-p {
-  margin-top: 1.5rem;
-  gap: 0.5rem;
 }
 
 /* 
@@ -589,7 +590,7 @@ Post details in widget bar
 .latest-posts .latest-p .post-details p a {
   color: var(--clr-Deep-Plum);
 }
-.latest-posts .latest-p .post-details p a:hover{
+.latest-posts .latest-p .post-details p a:hover {
   color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -619,12 +620,20 @@ Categories in widget bar
 ========================
 */
 
+.widget-bar .posts-categories {
+  margin-top: 1rem;
+}
+
 .widget-bar .posts-categories .categories {
   margin-top: 2rem;
 }
 
 .widget-bar .posts-categories .categories {
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.widget-bar .posts-categories .categories li {
+  border-bottom: 1px solid var(--clr-gray);
 }
 
 .widget-bar .posts-categories .categories li a {
@@ -635,6 +644,7 @@ Categories in widget bar
 
 .widget-bar .posts-categories .categories li:hover a {
   color: var(--clr-Dusty-Pink);
+  border-bottom: 1px solid var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
