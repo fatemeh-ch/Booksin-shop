@@ -2,7 +2,7 @@
     <!-- Post Categories  -->
     <div class="post_categories d-flex column-flex align-items-flex-start">
         {% for cat in post.category.all %}
-        <a href="#">
+        <a href="{% url 'blog:category' cat_name=cat %}">
             {{cat.name|title}}
         </a>
         {% endfor %}
