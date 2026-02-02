@@ -690,6 +690,15 @@ Blog Pagination
   color: var(--clr-Deep-Plum);
 }
 
+.pagination ul li a:hover{
+  color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
 /* Active page */
 .pagination ul .active{
   background-color: var(--clr-Mauve-Mist);
