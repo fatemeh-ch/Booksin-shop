@@ -541,6 +541,7 @@ About writer
   text-align: justify;
   font-size: 0.8rem;
   margin: 2rem 0;
+  padding: 0 2rem;
 }
 
 /* 
@@ -663,6 +664,58 @@ End of Categories in widget bar
 End of Widget bar 
 =================
 */
+
+
+
+/*
+===============
+Blog Pagination
+===============
+*/
+
+.pagination{
+  margin: 0 auto 4rem;
+}
+
+.pagination ul{
+  gap: 2rem;
+}
+
+.pagination ul li a,
+.pagination ul li a:link{
+  color: var(--clr-black);
+}
+
+.pagination ul li a:visited{
+  color: var(--clr-Deep-Plum);
+}
+
+/* Active page */
+.pagination ul .active{
+  background-color: var(--clr-Mauve-Mist);
+  padding: 0.2rem 1rem;
+}
+
+.pagination ul .active a{
+  color: var(--clr-Cream-White)!important;
+  font-weight: 400;
+}
+
+.pagination ul .active:hover{
+  background-color:var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/*
+======================
+End of Blog Pagination
+======================
+*/
+
 
 /*
 ================
