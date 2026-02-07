@@ -37,53 +37,18 @@
         <h2 class="category_title">Category</h2>
         <div class="categories d-flex justify-content-space-between">
 
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/romance.jpg' %}" alt="romance">
-                    <p>Romance</p>
-                </a>
-            </div>
+            {% for category in categories %}
 
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/Horror.jpg' %}" alt="Horror">
-                    <p>Horror</p>
-                </a>
-            </div>
+                <!-- Category item -->
+                <div class="category_item">
+                    <a href="#" class="d-flex column-flex align-items-center">
+                        <img src="{{category.image.url}}" alt="category">
+                        <p>{{category.name}}</p>
+                    </a>
+                </div>
 
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/history.jpg' %}" alt="Historical">
-                    <p>History</p>
-                </a>
-            </div>
+            {% endfor %}
 
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/psychology.jpg' %}" alt="psychology">
-                    <p>Psychology</p>
-                </a>
-            </div>
-
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/programming.jpg' %}" alt="programming">
-                    <p>Programming</p>
-                </a>
-            </div>
-
-            <!-- Category item -->
-            <div class="category_item">
-                <a href="#" class="d-flex column-flex align-items-center">
-                    <img src="{% static 'images/category/Mystery.jpg' %}" alt="Mystery">
-                    <p>Mystery</p>
-                </a>
-            </div>
         </div>
     </section>
     <!--End of Category -->
