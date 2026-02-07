@@ -100,7 +100,7 @@
         {% endif %}
 
         {% for i in posts.paginator.page_range %}
-            {% if page_number == i %}
+            {% if posts.number == i %}
                 <li class="active">
                     <a href="?page={{i}}">{{i}}</a>
                 </li>
