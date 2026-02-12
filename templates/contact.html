@@ -55,23 +55,38 @@
             </section>
 
             <!-- Contact form -->
-            <form action="#" class="contact_form d-flex" id="contact_form" method="post">
+            <form action="{% url 'core:contact' %}" class="contact_form d-flex" id="contact_form" method="post">
+
+                {% csrf_token %}
                 <div class="text_boxes d-flex column-flex">
-                    <input type="text" placeholder="Enter your name " name="username">
+                    <input type="text" placeholder="Enter your name " name="name">
                     <input type="text" placeholder="Enter the subject" name="subject">
-                    <input type="email" placeholder="Enter your email" required>
+                    <input type="email" placeholder="Enter your email" required name="email">
                 </div>
-                <textarea name="contact_content" placeholder="Write your opinion"></textarea>
+                <textarea placeholder="Write your opinion" name="message"></textarea>
             </form>
             <!-- End of Contact form -->
-             
+
         </div>
         <!-- End Contact Info -->
 
         <!-- Submit button -->
-            <input type="submit" value="SEND MESSAGE" form="contact_form" class="contact_button">
+        <input type="submit" value="SEND MESSAGE" form="contact_form" class="contact_button">
+
+        <!-- Messages -->
+
+        {% if messages %}
+        <ul class="messages d-flex column-flex align-items-center">
+
+            {% for message in messages %}
+                <li>{{message}}</li>
+            {% endfor %}
+
+        </ul>
+        {% endif %}
+
     </div>
+    <!-- End of Contact -->
 </div>
-<!-- End of Contact -->
 
 {% endblock %}

@@ -724,11 +724,35 @@ End of Blog Pagination
 ======================
 */
 
+
+/*
+========
+Messages
+========
+*/
+
+.messages li{
+  border: 1px solid var(--clr-Warm-Taupe);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  color: var(--clr-Deep-Plum);
+}
+
+
+/*
+===============
+End of messages
+===============
+*/
+
+
+
 /*
 ================
 RESPONSIVE CODES
 ================
 */
+
 
 /* 1200 px */
 
