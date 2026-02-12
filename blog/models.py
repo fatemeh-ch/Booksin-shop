@@ -2,11 +2,15 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# Class of categories
+
+# Category
 class Category(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='categories/',
                               default='categories/default.jpg')
+    
+    created_date = models.DateTimeField(auto_now_add=True)
+    updated_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
@@ -15,7 +19,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
 
-# Class of posts
+# Post
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=255)

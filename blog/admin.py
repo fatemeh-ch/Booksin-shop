@@ -1,9 +1,8 @@
 from django.contrib import admin
-from blog.models import Post,Category
-
-# Register your models here.
+from blog.models import Post, Category
 
 
+# Post manager
 class PostAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     empty_value_display = '-Empty'
@@ -14,5 +13,16 @@ class PostAdmin(admin.ModelAdmin):
     ordering = ('-created_date',)
     search_fields = ['title']
 
-admin.site.register(Post,PostAdmin)
-admin.site.register(Category)
+
+# Category manager
+class CategoryAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_date'
+    list_display = ['name', 'image']
+    fields = ['name', 'image']
+    search_fields = ['name']
+    empty_value_display = '-Empty'
+
+
+# Registering models
+admin.site.register(Post, PostAdmin)
+admin.site.register(Category, CategoryAdmin)
