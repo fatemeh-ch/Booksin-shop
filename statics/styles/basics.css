@@ -464,6 +464,11 @@ Widget bar
   padding: 2rem 1rem;
 }
 
+.widget-bar > section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* 
 ==========
 Search box 
@@ -558,6 +563,7 @@ Latest posts
 
 .latest-posts {
   margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .latest-p {
@@ -615,37 +621,38 @@ End of Latest posts
 ===================
 */
 
-
 /* 
 ===================
 Tags in widget bar 
 ===================
 */
 
-.widget-bar .tags{
-  padding: 2rem 2rem 1rem;
+.widget-bar .tags {
+  width: 100%;
+  padding: 2rem 1rem 1rem;
+  box-sizing: border-box;
 }
 
-.widget-bar .tags .widget-bar-title{
-  padding: 0.5rem 6.5rem;
+.widget-bar .tags .widget-bar-title {
+  padding: 0.5rem 0;
 }
 
 /* Tag items */
 
-.widget-bar .tag_items{
-  padding-top: 1.5rem;
+.widget-bar .tag_items {
+  padding: 1.5rem 0;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.widget-bar .tag_items li{
+.widget-bar .tag_items li {
   border: 0.5px solid var(--clr-gray);
   padding: 0.2rem 0.5rem;
   background-color: var(--clr-Cream-White);
   font-size: 0.8rem;
 }
 
-.widget-bar .tag_items li:hover{
+.widget-bar .tag_items li:hover {
   background-color: var(--clr-Dusty-Pink);
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -654,9 +661,9 @@ Tags in widget bar
   -o-transition: var(--transition);
 }
 
-.widget-bar .tag_items li:hover a{
+.widget-bar .tag_items li:hover a {
   color: var(--clr-white);
-    transition: var(--transition);
+  transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
@@ -664,17 +671,15 @@ Tags in widget bar
 }
 
 .widget-bar .tag_items li:visited a,
-.widget-bar .tag_items li a{
+.widget-bar .tag_items li a {
   color: var(--clr-Deep-Plum);
 }
-
 
 /* 
 =========================
 End of Tags in widget bar 
 =========================
 */
-
 
 /* 
 ========================
@@ -689,9 +694,6 @@ Categories in widget bar
 
 .widget-bar .posts-categories .categories {
   margin-top: 2rem;
-}
-
-.widget-bar .posts-categories .categories {
   gap: 1.5rem;
 }
 
@@ -785,20 +787,18 @@ End of Blog Pagination
 ======================
 */
 
-
 /*
 ========
 Messages
 ========
 */
 
-.messages li{
+.messages li {
   border: 1px solid var(--clr-Warm-Taupe);
   padding: 1rem 2rem;
   border-radius: 25px;
   color: var(--clr-Deep-Plum);
 }
-
 
 /*
 ===============
@@ -806,14 +806,11 @@ End of messages
 ===============
 */
 
-
-
 /*
 ================
 RESPONSIVE CODES
 ================
 */
-
 
 /* 1200 px */
 
@@ -826,6 +823,37 @@ RESPONSIVE CODES
 
   .container .header .top_header .top_header_icons {
     margin-left: 0;
+  }
+
+  .widget-bar .tags .widget-bar-title {
+    padding: 0.5rem 5.5rem;
+  }
+}
+
+/* 1000px */
+
+@media screen and (max-width: 1000px) {
+  /* Widget-bar */
+  .writer-img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .blog-writer .about-writer {
+    text-align: left;
+  }
+
+  .widget-bar-title {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .latest-posts .post-photo {
+    max-width: 85px;
+    max-height: 75px;
+  }
+
+  .widget-bar .tags .widget-bar-title {
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -842,6 +870,10 @@ RESPONSIVE CODES
 
   .header .navigation .navigation_bar {
     gap: 2rem;
+  }
+
+  .widget-bar {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -862,6 +894,7 @@ RESPONSIVE CODES
 
   .widget-bar #slider_search_box {
     display: block;
+    margin-top: 2rem;
   }
 
   .widget-bar .search_box {
@@ -870,6 +903,11 @@ RESPONSIVE CODES
 
   .widget-bar .search_box form {
     position: relative;
+    text-align: center;
+  }
+
+  .search_box form button {
+    right: 5rem;
   }
 
   .latest-posts {
@@ -890,8 +928,13 @@ RESPONSIVE CODES
   .blog-writer {
     padding: 0 2rem;
   }
+
   .widget-bar {
     width: 80%;
+  }
+
+  .search_box form button {
+    right: 4rem;
   }
 }
 
@@ -921,6 +964,10 @@ RESPONSIVE CODES
 
   .search_box form button {
     padding: 0.45rem 0.8rem;
+  }
+
+  .search_box form button {
+    right: 3rem;
   }
 
   /* Footer */
@@ -967,6 +1014,10 @@ RESPONSIVE CODES
   .post_categories a {
     font-size: 0.9rem;
   }
+
+  .search_box form button {
+    right: 2.5rem;
+  }
 }
 
 /* 650px */
@@ -983,6 +1034,12 @@ RESPONSIVE CODES
 
   .container:first-child {
     padding: 2rem 3rem 0 3rem;
+  }
+
+  /* Widget-bar */
+
+  .search_box form button {
+    right: 1rem;
   }
 
   /* Responsive Navigation */
@@ -1028,8 +1085,14 @@ RESPONSIVE CODES
   .navigation_bar_res a p {
     font-size: 0.9rem;
   }
+
+  /* widget-bar */
   .widget-bar {
     width: 100%;
+  }
+
+  .search_box form button {
+    right: 2.8rem;
   }
 }
 
@@ -1042,9 +1105,14 @@ RESPONSIVE CODES
     align-self: center;
     column-gap: 12rem;
   }
+
   .post_categories {
     align-items: flex-start;
     margin-bottom: 0.5rem;
+  }
+
+  .search_box form button {
+    right: 1.8rem;
   }
 }
 
@@ -1090,5 +1158,9 @@ RESPONSIVE CODES
 
   .widget-bar-title {
     font-size: 0.8rem;
+  }
+
+  .search_box form button {
+    right: 0.2rem;
   }
 }
