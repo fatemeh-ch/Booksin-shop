@@ -1,11 +1,18 @@
 from django.shortcuts import render,get_object_or_404
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from blog.models import Post
-# Create your views here.
+from taggit.models import Tag
 
+
+# Queries
+tags=Tag.objects.all()
+
+
+# Views
 
 def blog_home_view(request,cat_name=None,author_name=None):
     posts = Post.objects.filter(status=1)
+    
     if cat_name:
         posts=Post.objects.filter(category__name=cat_name)
 
@@ -24,13 +31,17 @@ def blog_home_view(request,cat_name=None,author_name=None):
         posts=paginator.get_page(1)
 
 
-    context = {'posts': posts}
+    context = {'posts': posts,'tags':tags}
     return render(request, 'blog/blog_home.html', context)
 
 def blog_single_view(request,pid):
     posts = Post.objects.filter(status=1)
     post=get_object_or_404(posts,pk=pid)
-    return render(request,'blog/blog_single.html',context={'post':post})
+
+    tags=post.tags.all()
+
+    context={'post':post,'tags':tags}
+    return render(request,'blog/blog_single.html',context)
 
 def blog_search_view(request):
     posts = Post.objects.filter(status=1)
