@@ -615,6 +615,67 @@ End of Latest posts
 ===================
 */
 
+
+/* 
+===================
+Tags in widget bar 
+===================
+*/
+
+.widget-bar .tags{
+  padding: 2rem 2rem 1rem;
+}
+
+.widget-bar .tags .widget-bar-title{
+  padding: 0.5rem 6.5rem;
+}
+
+/* Tag items */
+
+.widget-bar .tag_items{
+  padding-top: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.widget-bar .tag_items li{
+  border: 0.5px solid var(--clr-gray);
+  padding: 0.2rem 0.5rem;
+  background-color: var(--clr-Cream-White);
+  font-size: 0.8rem;
+}
+
+.widget-bar .tag_items li:hover{
+  background-color: var(--clr-Dusty-Pink);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.widget-bar .tag_items li:hover a{
+  color: var(--clr-white);
+    transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.widget-bar .tag_items li:visited a,
+.widget-bar .tag_items li a{
+  color: var(--clr-Deep-Plum);
+}
+
+
+/* 
+=========================
+End of Tags in widget bar 
+=========================
+*/
+
+
 /* 
 ========================
 Categories in widget bar
