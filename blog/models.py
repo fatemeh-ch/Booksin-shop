@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from taggit.managers import TaggableManager
 
 
 
@@ -28,6 +29,7 @@ class Post(models.Model):
     image = models.ImageField(upload_to='blog/', default='blog/default.jpg')
     counted_views = models.IntegerField(default=0)
     status = models.BooleanField(default=0)
+    tags=TaggableManager()
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(null=True)
