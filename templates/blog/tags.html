@@ -9,7 +9,7 @@
     <ul class="d-flex tag_items">
 
         {% for tag in tags %}
-        <li><a href="#">{{tag.name}}</a></li>
+        <li><a href="{% url 'blog:tag' tag_name=tag.name %}">{{tag.name|title}}</a></li>
         {% endfor %}
 
     </ul>

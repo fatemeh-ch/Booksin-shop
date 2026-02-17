@@ -10,16 +10,20 @@ tags=Tag.objects.all()
 
 # Views
 
-def blog_home_view(request,cat_name=None,author_name=None):
+def blog_home_view(request,**kwargs):
     posts = Post.objects.filter(status=1)
     
-    if cat_name:
-        posts=Post.objects.filter(category__name=cat_name)
+    if kwargs.get('cat_name')!=None:
+        posts=Post.objects.filter(category__name=kwargs['cat_name'])
 
-    if author_name:
-        posts=Post.objects.filter(author__username=author_name)
+    if kwargs.get('author_name')!=None:
+        posts=Post.objects.filter(author__username=kwargs['author'])
+
+    if kwargs.get('tag_name')!=None:
+        posts=Post.objects.filter(tags__name__in=[kwargs['tag_name']])
 
     paginator=Paginator(posts,3)
+    
     try:
         page_number=request.GET.get('page')
         posts=paginator.get_page(page_number)
