@@ -1,9 +1,10 @@
 from django.contrib import admin
 from blog.models import Post, Category
+from django_summernote.admin import SummernoteModelAdmin
 
 
 # Post manager
-class PostAdmin(admin.ModelAdmin):
+class PostAdmin(SummernoteModelAdmin):
     date_hierarchy = 'created_date'
     empty_value_display = '-Empty'
     list_display = ['title', 'author', 'status', 'created_date']
@@ -12,6 +13,7 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ('status', 'author')
     ordering = ('-created_date',)
     search_fields = ['title']
+    summernote_fields=['content',]
 
 
 # Category manager

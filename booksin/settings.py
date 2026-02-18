@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # Other packages
     'taggit',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,6 @@ MEDIA_ROOT = BASE_DIR/'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# My settings
+X_FRAME_OPTIONS='SAMEORIGIN'
