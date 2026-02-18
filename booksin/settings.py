@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
 
     # Other packages
+    'django.contrib.humanize',
     'taggit',
     'django_summernote',
 ]
