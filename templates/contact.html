@@ -31,7 +31,7 @@
                     <i class="fa-regular fa-house"></i>
                     <div class="info">
                         <address>New York</address>
-                        <address>Deggan Lake road 125</address>
+                        <address>Deggan Lake</address>
                     </div>
                 </div>
 
@@ -63,15 +63,25 @@
                     <input type="text" placeholder="Enter the subject" name="subject">
                     <input type="email" placeholder="Enter your email" required name="email">
                 </div>
-                <textarea placeholder="Write your opinion" name="message"></textarea>
+                <textarea placeholder="Write your opinion and then fill the Captcha below" name="message"></textarea>
             </form>
             <!-- End of Contact form -->
 
         </div>
         <!-- End Contact Info -->
 
-        <!-- Submit button -->
-        <input type="submit" value="SEND MESSAGE" form="contact_form" class="contact_button">
+        <!-- Form submitt -->
+        <div class="d-flex column-flex">
+
+            <!-- Captcha -->
+            <div class="captcha d-flex column-flex">
+                {{form.captcha}}
+            </div>
+
+            <!-- Submit button -->
+            <input type="submit" value="SEND MESSAGE" form="contact_form" class="contact_button">
+        </div>
+
 
         <!-- Messages -->
 
@@ -79,7 +89,7 @@
         <ul class="messages d-flex column-flex align-items-center">
 
             {% for message in messages %}
-                <li>{{message}}</li>
+            <li>{{message}}</li>
             {% endfor %}
 
         </ul>

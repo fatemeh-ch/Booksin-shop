@@ -30,7 +30,7 @@ def contact_view(request):
             messages.add_message(request,messages.SUCCESS,'Your message was recieved successfully')
             return redirect('core:contact')
         else:
-            messages.add_message(request,messages.ERROR,'Your message was not send!')
+            messages.add_message(request,messages.ERROR,'Your message was not sent!')
         
     form=ContactForm()
     context={'form':form}

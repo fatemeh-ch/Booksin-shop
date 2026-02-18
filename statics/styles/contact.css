@@ -144,6 +144,10 @@ Contact form
   resize: none;
 }
 
+.contact_form textarea::placeholder{
+  font-size: 0.8rem;
+}
+
 .contact_form textarea:focus {
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -184,6 +188,27 @@ Contact Button
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
+
+/*
+=======
+Captcha
+=======
+*/
+
+.captcha{
+  margin-left: auto;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+
+/*
+==============
+End of Captcha
+==============
+*/
+
+
 
 /*
 ================
@@ -282,5 +307,11 @@ Responsive codes
 
   .contact_button {
     padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .captcha{
+    gap: 0.5rem;
+    margin: 1rem auto;
   }
 }
