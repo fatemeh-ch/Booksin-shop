@@ -85,32 +85,32 @@ Post comments
 }
 
 /* Comment area */
-.comment-box{
+.comment-box {
   border: 1px solid var(--clr-gray);
   padding: 1rem;
 }
 
 /* Comment details */
-.comment-details{
+.comment-details {
   gap: 1.5rem;
 }
 
-.comment-details h4{
+.comment-details h4 {
   color: var(--clr-Dusty-Pink);
 }
 
-.comment-details p{
+.comment-details p {
   color: var(--clr-black);
 }
 
-.published_date{
+.published_date {
   color: var(--clr-Warm-Taupe);
   font-size: 0.8rem;
 }
 
 /* User picture */
 
-.user-pic{
+.user-pic {
   width: 60px;
   margin-right: 2.5rem;
 }
@@ -275,6 +275,25 @@ Responsive Codes
   #message::placeholder {
     font-size: 0.7rem;
   }
+
+  /* Comment Area */
+
+  .comment-count {
+    margin: 1rem auto 4rem;
+  }
+
+  .post-comments {
+    padding: 0;
+  }
+
+  .user-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .comment-details h4 {
+    font-size: 0.9rem;
+  }
 }
 
 /* 900px */
@@ -319,6 +338,10 @@ Responsive Codes
 
   #send {
     width: 30%;
+  }
+
+  .comment-box {
+    align-items: flex-start;
   }
 }
 
