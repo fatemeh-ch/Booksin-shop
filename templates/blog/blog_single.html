@@ -39,7 +39,35 @@
                     {{post.content|safe}}
                 </div>
             </div>
+
         </div>
+
+        <!-- The comments of post -->
+        <section class="post-comments d-flex column-flex">
+            
+            <!-- Comment count -->
+            <h2 class="comment-count">Comments</h2>
+
+            <!-- Comment box -->
+            <div class="comment-box d-flex justify-content-space-between align-items-center">
+                <div class="left-side d-flex">
+                    <!-- User pic -->
+                    <img src="{% static 'images/user.png' %}" alt="user-pic" class="user-pic">
+
+                    <!-- Comment details -->
+                    <div class="comment-details d-flex column-flex">
+                        <h4>User name</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="published_date">
+                    <p>Time 2026/256</p>
+                </div>
+            </div>
+
+        </section>
+        <!--End of The comments of post -->
+
 
     </section>
 

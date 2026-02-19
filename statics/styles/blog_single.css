@@ -64,10 +64,67 @@ End of Post area
 ================
 */
 
+/* 
+=============
+Post comments 
+=============
+*/
+
+.post-comments {
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Comment count title */
+
+.comment-count {
+  color: var(--clr-Deep-Plum);
+  border-bottom: 2px solid var(--clr-Dusty-Pink);
+  width: fit-content;
+  margin: 1rem auto 2rem;
+}
+
+/* Comment area */
+.comment-box{
+  border: 1px solid var(--clr-gray);
+  padding: 1rem;
+}
+
+/* Comment details */
+.comment-details{
+  gap: 1.5rem;
+}
+
+.comment-details h4{
+  color: var(--clr-Dusty-Pink);
+}
+
+.comment-details p{
+  color: var(--clr-black);
+}
+
+.published_date{
+  color: var(--clr-Warm-Taupe);
+  font-size: 0.8rem;
+}
+
+/* User picture */
+
+.user-pic{
+  width: 60px;
+  margin-right: 2.5rem;
+}
+
+/* 
+====================
+End of Post comments 
+====================
+*/
+
 /*
-========
-Comments
-========
+============
+New Comments
+============
 */
 .comments {
   gap: 2rem;
@@ -159,9 +216,9 @@ Comments
 }
 
 /*
-===============
-End of Comments
-===============
+===================
+End of New Comments
+===================
 */
 
 /*
