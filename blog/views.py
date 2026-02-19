@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from blog.models import Post
+from blog.models import Post, Comment
 from taggit.models import Tag
+from blog.forms import CommentForm
+from django.contrib import messages
 
 
 # Queries
@@ -38,17 +40,28 @@ def blog_home_view(request, **kwargs):
     context = {'posts': posts,
                'tags': tags,
                'current_tag': tag_name}
-    
+
     return render(request, 'blog/blog_home.html', context)
 
 
 def blog_single_view(request, pid):
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'Your comment has been recieved and will be displayed after admin\'confirmation. ')
+        else:
+            messages.error(request, 'Your comment did not recieved!')
+
     posts = Post.objects.filter(status=1)
     post = get_object_or_404(posts, pk=pid)
-
+    comments = Comment.objects.filter(post=post.id, approved=True)
+    form = CommentForm()
     tags = post.tags.all()
 
-    context = {'post': post, 'tags': tags}
+    context = {'post': post, 'tags': tags, 'form': form, 'comments': comments}
     return render(request, 'blog/blog_single.html', context)
 
 

@@ -73,6 +73,7 @@ Post comments
 .post-comments {
   width: 100%;
   padding: 2rem;
+  gap: 1.5rem;
 }
 
 /* Comment count title */
@@ -92,7 +93,7 @@ Post comments
 
 /* Comment details */
 .comment-details {
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .comment-details h4 {
@@ -101,6 +102,9 @@ Post comments
 
 .comment-details p {
   color: var(--clr-black);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .published_date {
@@ -243,6 +247,32 @@ End of Widget bar
 =================
 */
 
+.submits {
+  gap: 2rem;
+}
+
+.captcha {
+  gap: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+}
+
+/* Alerts */
+
+.error,
+.success {
+  color: var(--clr-Deep-Plum);
+  border: 1px solid var(--clr-Dusty-Pink);
+  width: fit-content;
+  margin: 2rem auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 0.5rem 2rem;
+}
+
 /*
 ================
 Responsive Codes
@@ -343,6 +373,14 @@ Responsive Codes
   .comment-box {
     align-items: flex-start;
   }
+
+  .submits {
+    margin-right: 5rem;
+  }
+
+  #send {
+    width: 40%;
+  }
 }
 
 /* 650px */
@@ -398,6 +436,6 @@ Responsive Codes
   }
 
   #send {
-    width: 40%;
+    width: 50%;
   }
 }

@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% load humanize %}
+
 {% load blog_tags %}
 
 {% block extra_css %}
@@ -44,9 +46,11 @@
 
         <!-- The comments of post -->
         <section class="post-comments d-flex column-flex">
-            
+
             <!-- Comment count -->
-            <h2 class="comment-count">Comments</h2>
+            <h2 class="comment-count">{{comments.count}} Comments</h2>
+
+            {% for comment in comments %}
 
             <!-- Comment box -->
             <div class="comment-box d-flex justify-content-space-between align-items-center">
@@ -56,14 +60,16 @@
 
                     <!-- Comment details -->
                     <div class="comment-details d-flex column-flex">
-                        <h4>User name</h4>
-                        <p>Description</p>
+                        <h4>{{comment.name}}</h4>
+                        <p>{{comment.message}}</p>
                     </div>
                 </div>
                 <div class="published_date">
-                    <p>Time 2026/256</p>
+                    <p>{{comment.created_date|naturalday}}</p>
                 </div>
             </div>
+
+            {% endfor %}
 
         </section>
         <!--End of The comments of post -->
@@ -92,14 +98,30 @@
         <!-- Comment form -->
         <h3 class="comment_title">Leave a comment</h3>
 
-        <form action="#" method="post" class="comments_form">
+        <form action="{% url 'blog:single' pid=post.id %}" method="post" class="comments_form">
+            {% csrf_token %}
+
             <input type="text" name="name" required placeholder="Enter Name" class="comment_inputs" id="name">
             <input type="text" name="subject" placeholder="Enter Subject" class="comment_inputs" id="subject">
             <input type="email" name="email" required placeholder="Enter Email" class="comment_inputs" id="email">
             <textarea name="message" placeholder="Message" rows="5" id="message"></textarea>
 
-            <button type="submit" name="send_comment" id="send">Post comment</button>
+            <input type="hidden" value="{{post.id}}" name="post">
+
+            <div class="submits d-flex column-flex align-items-center">
+                <div class="captcha d-flex ">
+                    {{form.captcha}}
+                </div>
+                <button type="submit" name="send_comment" id="send">Post comment</button>
+            </div>
         </form>
+
+        {% for message in messages %}
+        <div class="{{message.tags}}">
+            {{message}}
+        </div>
+        {% endfor %}
+
     </section>
     <!-- End of Comments -->
 </main>
