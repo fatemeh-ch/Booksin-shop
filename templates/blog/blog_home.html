@@ -23,6 +23,7 @@
 
     <!-- Posts Area -->
     <section class="posts_area d-flex column-flex align-items-center">
+        {% if posts %}
         {% for post in posts %}
         <!-- Single Post -->
         <article class="single_post d-flex">
@@ -68,6 +69,24 @@
 
         <!-- End of Single Post -->
         {% endfor %}
+
+        {% else %}
+
+        {% if current_tag %}
+
+        <div class="alert-no-post d-flex">
+            <p>No posts related to {{ current_tag }} tag!</p>
+        </div>
+
+        {% else %}
+
+        <div class="alert-no-post d-flex">
+            <p>There is no post yet!</p>
+        </div>
+
+        {% endif %}
+
+        {% endif %}
     </section>
     <!-- End of Post Area -->
 
@@ -96,29 +115,29 @@
     <ul class="d-flex justify-content-center align-items-center">
 
         {% if posts.has_previous %}
-            <li>
-                <a href="?page={{posts.previous_page_number}}">Previous</a>
-            </li>
+        <li>
+            <a href="?page={{posts.previous_page_number}}">Previous</a>
+        </li>
         {% endif %}
 
         {% for i in posts.paginator.page_range %}
-            {% if posts.number == i %}
-                <li class="active">
-                    <a href="?page={{i}}">{{i}}</a>
-                </li>
+        {% if posts.number == i %}
+        <li class="active">
+            <a href="?page={{i}}">{{i}}</a>
+        </li>
 
         {% else %}
-            <li>
-                <a href="?page={{i}}">{{i}}</a>
-            </li>
+        <li>
+            <a href="?page={{i}}">{{i}}</a>
+        </li>
 
         {% endif %}
         {% endfor %}
 
         {% if posts.has_next %}
-            <li>
-                <a href="?page={{posts.next_page_number}}">Next</a>
-            </li>
+        <li>
+            <a href="?page={{posts.next_page_number}}">Next</a>
+        </li>
         {% endif %}
 
     </ul>

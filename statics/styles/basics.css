@@ -800,6 +800,16 @@ Messages
   color: var(--clr-Deep-Plum);
 }
 
+.alert-no-post{
+  margin-top: 4rem;
+}
+
+.alert-no-post p{
+  color: var(--clr-Deep-Plum);
+  font-size: 1.5rem;
+  padding: 4rem 10rem;
+}
+
 /*
 ===============
 End of messages

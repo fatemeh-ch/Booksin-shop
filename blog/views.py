@@ -12,12 +12,13 @@ tags = Tag.objects.all()
 
 def blog_home_view(request, **kwargs):
     posts = Post.objects.filter(status=1)
+    tag_name = kwargs.get('tag_name')
 
     if kwargs.get('cat_name') != None:
         posts = Post.objects.filter(category__name=kwargs['cat_name'])
 
     if kwargs.get('author_name') != None:
-        posts = Post.objects.filter(author__username=kwargs['author'])
+        posts = Post.objects.filter(author__username=kwargs['author_name'])
 
     if kwargs.get('tag_name') != None:
         posts = Post.objects.filter(tags__name__in=[kwargs['tag_name']])
@@ -34,7 +35,10 @@ def blog_home_view(request, **kwargs):
     except PageNotAnInteger:
         posts = paginator.get_page(1)
 
-    context = {'posts': posts, 'tags': tags}
+    context = {'posts': posts,
+               'tags': tags,
+               'current_tag': tag_name}
+    
     return render(request, 'blog/blog_home.html', context)
 
 
