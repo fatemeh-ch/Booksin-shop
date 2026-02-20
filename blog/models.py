@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from taggit.managers import TaggableManager
+from django.urls import reverse
 
 
 # Category
@@ -35,6 +36,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title[:20]
+
+    def get_absolute_url(self):
+        return reverse('blog:single', kwargs={'pid': self.id})
 
     class Meta:
         ordering = ['-created_date']
