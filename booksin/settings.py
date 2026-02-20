@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'taggit',
     'django_summernote',
     'captcha',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -142,7 +143,11 @@ MEDIA_ROOT = BASE_DIR/'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # My settings
-X_FRAME_OPTIONS='SAMEORIGIN'
-MULTI_CAPTCHA_ADMIN={
-    'engine':'simple-captcha'
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+MULTI_CAPTCHA_ADMIN = {
+    'engine': 'simple-captcha'
 }
+
+SITE_ID = 2
