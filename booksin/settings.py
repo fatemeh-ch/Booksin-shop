@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'captcha',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
