@@ -24,7 +24,7 @@ from blog.sitemaps import BlogSitemap
 
 sitemaps = {
     'static': StaticViewSitemap,
-    'blog':BlogSitemap
+    'blog': BlogSitemap
 }
 
 
