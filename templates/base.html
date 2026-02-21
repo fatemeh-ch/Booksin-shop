@@ -50,9 +50,13 @@
                 </div>
                 <!-- Top Header icons -->
                 <div class="top_header_icons d-flex align-items-center">
+
+                    {% if request.user.is_authenticated %}
+                    <p class="username">Hi {{request.user}} :)</p>
+                    {% endif %}
+
                     <a href="{% url 'accounts:login' %}"><i class="fa-regular fa-user"></i></a>
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
                 </div>
             </div>
             <!-- End of Top header -->
@@ -86,7 +90,8 @@
         <nav>
             <ul class="navigation_bar_res position-fixed display-none">
                 <li>
-                    <a href="{% url 'core:home' %}" class="d-flex column-flex align-items-center"><i class="fa-regular fa-house"></i>
+                    <a href="{% url 'core:home' %}" class="d-flex column-flex align-items-center"><i
+                            class="fa-regular fa-house"></i>
                         <p>Home</p>
                     </a>
                 </li>
@@ -96,8 +101,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-basket-shopping"></i>
-                        <p>Cart</p>
+                    <a href="{% url 'core:contact' %}"><i class="fa-solid fa-phone"></i>
+                        <p>Contact</p>
                     </a>
                 </li>
                 <li>

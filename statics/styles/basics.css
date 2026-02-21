@@ -204,6 +204,11 @@ Header Section
   -o-transition: var(--transition);
 }
 
+.username {
+  color: var(--clr-Warm-Taupe);
+  white-space: nowrap;
+}
+
 /* 
 =========================
 End of Top header Section 
@@ -800,11 +805,11 @@ Messages
   color: var(--clr-Deep-Plum);
 }
 
-.alert-no-post{
+.alert-no-post {
   margin-top: 4rem;
 }
 
-.alert-no-post p{
+.alert-no-post p {
   color: var(--clr-Deep-Plum);
   font-size: 1.5rem;
   padding: 4rem 10rem;
@@ -1158,6 +1163,10 @@ RESPONSIVE CODES
 @media screen and (max-width: 400px) {
   .post_info {
     column-gap: 9rem;
+  }
+
+  .container .header .top_header .logo h1 {
+    font-size: 1.1rem;
   }
 
   /* Widget bar */
