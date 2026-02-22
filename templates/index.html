@@ -112,12 +112,12 @@
 
             {% for author in authors %}
             {% if author.image.name != 'authors/default.png' %}
-            <!-- Author -->
+
             <a href="#">
                 <div class="p_author d-flex column-flex align-items-center">
-                    <img src="{{author.image.url}}" alt="author">
-                    <p class="author_name">Adma Silvera</p>
-                    <p class="author_book">2 Books</p>
+                    <img src="{{ author.image.url }}" alt="author">
+                    <p class="author_name">{{ author.name }}</p>
+                    <p class="author_book">{{ author.book_count }}</p>
                 </div>
             </a>
             {% endif %}
