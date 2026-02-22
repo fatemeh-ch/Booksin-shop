@@ -41,9 +41,12 @@
         <!-- End of Main Title -->
 
         <!-- Login form -->
-        <form action="#" class="login_form d-flex column-flex">
+        <form action="{% url 'accounts:login' %}" class="login_form d-flex column-flex" method="post">
+            
+            {% csrf_token %}
+
             <label for="username"><i class="fa-regular fa-user form_icons"></i></label>
-            <input type="text" id="username" name="username" placeholder="Enter uername..." class="form_inputs">
+            <input type="text" id="username" name="username" placeholder="Enter username..." class="form_inputs">
             <label for="password"><i class="fa-solid fa-lock form_icons"></i></label>
             <input type="password" name="password" id="password" placeholder="Enter password" class="form_inputs">
             <input type="submit" value="Send" class="submit_btn">
@@ -51,7 +54,7 @@
         <!-- End of Login form -->
 
         <!-- Register -->
-         <a href="{% url 'accounts:register' %}" class="login_msg">Don't have account?sign up</a>
+        <a href="{% url 'accounts:register' %}" class="login_msg">Don't have account?sign up</a>
 
     </div>
     <!-- End of Login container -->
