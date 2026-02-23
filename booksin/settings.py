@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'captcha',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'robots',
 ]
 
 MIDDLEWARE = [
