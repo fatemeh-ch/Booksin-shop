@@ -156,15 +156,14 @@ Add your screenshots here in a 3x2 table with fixed size:
 
 <table>
   <tr>
-    <td><img src="screenshots/home.png" alt="Home Page" width="200" height="300"></td>
-    <td><img src="screenshots/login.png" alt="Login Post" width="200" height="300"></td>
-    <td><img src="screenshots/contact.png" alt="Contact Page" width="150" height="300"></td>
-    
+    <td><img src="screenshots/home.png" alt="Home Page" width="300" height="200"></td>
+    <td><img src="screenshots/contact.png" alt="Contact Page" width="300" height="200"></td>
+    <td><img src="screenshots/login.png" alt="Login Post" width="300" height="200"></td>
   </tr>
   <tr>
-    <td><img src="screenshots/blog.png" alt="Blog Page" width="200" height="300"></td>
-    <td><img src="screenshots/single_blog.png" alt="Single Post" width="200" height="300"></td>
-    <td><img src="screenshots/blog-res.png" alt="Responsive-Blog Page" width="50" height="300"></td>
+    <td><img src="screenshots/blog.png" alt="Blog Page" width="300" height="200"></td>
+    <td><img src="screenshots/single_blog.png" alt="Single Post" width="300" height="200"></td>
+    <td><img src="screenshots/blog-res.png" alt="Responsive-Blog Page" width="300" height="200"></td>
     
   </tr>
 </table>
