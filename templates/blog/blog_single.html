@@ -98,20 +98,40 @@
         <!-- Comment form -->
         <h3 class="comment_title">Leave a comment</h3>
 
-        <form action="{% url 'blog:single' pid=post.id %}" method="post" class="comments_form">
-            {% csrf_token %}
-
-            <input type="text" name="name" required placeholder="Enter Name" class="comment_inputs" id="name">
-            <input type="text" name="subject" placeholder="Enter Subject" class="comment_inputs" id="subject">
-            <input type="email" name="email" required placeholder="Enter Email" class="comment_inputs" id="email">
-            <textarea name="message" placeholder="Message" rows="5" id="message"></textarea>
-
+        <form action="{% url 'blog:single' pid=post.id %}" method="post" class="comments_form d-flex column-flex">
+            
             <input type="hidden" value="{{post.id}}" name="post">
 
+            {% csrf_token %}
+
+            {% if request.user.is_authenticated %}
+
+            <input type="hidden" name="name" required placeholder="Enter Name" class="comment_inputs" id="name"
+                value="{{request.user.username}}">
+
+            <input type="hidden" name="email" required placeholder="Enter Email" class="comment_inputs" id="email"
+                value="{{request.user.email}}">
+
+            {% else %}
+
+            <div class="aside_fields d-flex">
+                <input type="text" name="name" required placeholder="Enter Name" class="comment_inputs" id="name">
+                <input type="email" name="email" required placeholder="Enter Email" class="comment_inputs" id="email">
+            </div>
+
+            {% endif %}
+
+            <input type="text" name="subject" placeholder="Enter Subject" class="comment_inputs" id="subject">
+            <textarea name="message" placeholder="Message" rows="5" id="message"></textarea>
+
+            <!-- Captcha -->
+
             <div class="submits d-flex column-flex align-items-center">
-                <div class="captcha d-flex ">
+                <div class="captcha d-flex justify-content-center">
                     {{form.captcha}}
                 </div>
+
+                <!-- Submit Button -->
                 <button type="submit" name="send_comment" id="send">Post comment</button>
             </div>
         </form>

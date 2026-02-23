@@ -146,37 +146,24 @@ New Comments
 }
 
 .comments_form {
-  display: grid;
-  grid-template-areas:
-    "name subject"
-    "email email"
-    "message message"
-    "message message";
-  column-gap: 1rem;
-  row-gap: 2rem;
+  gap: 2rem;
 }
 
-#name {
-  grid-area: name;
+.comments_form .aside_fields {
+  gap: 2rem;
 }
 
-#subject {
-  grid-area: subject;
-}
-
-#email {
-  grid-area: email;
+.comments_form .aside_fields .comment_inputs {
+  width: 100%;
 }
 
 /* Send Button */
 #send {
-  width: 40%;
   height: 2rem;
   background-color: var(--clr-Mauve-Mist);
   border: none;
   color: var(--clr-black);
   padding: 0.3rem 1rem;
-  margin-left: 80%;
 }
 
 #send:hover {
@@ -279,14 +266,6 @@ Responsive Codes
 ================
 */
 
-/* 1120px */
-
-@media screen and (max-width: 1120px) {
-  #send {
-    width: 50%;
-  }
-}
-
 /* 992px */
 @media screen and (max-width: 992px) {
   .post_details {
@@ -328,14 +307,8 @@ Responsive Codes
 
 /* 900px */
 @media screen and (max-width: 900px) {
-  .comments .comments_form {
-    display: flex;
+  .aside_fields {
     flex-direction: column;
-  }
-
-  #send {
-    margin-left: 30%;
-    width: 40%;
   }
 }
 
@@ -366,20 +339,8 @@ Responsive Codes
     margin-bottom: 2rem;
   }
 
-  #send {
-    width: 30%;
-  }
-
   .comment-box {
     align-items: flex-start;
-  }
-
-  .submits {
-    margin-right: 5rem;
-  }
-
-  #send {
-    width: 40%;
   }
 }
 
@@ -433,9 +394,5 @@ Responsive Codes
 
   .comment_inputs {
     padding: 0.5rem 1rem;
-  }
-
-  #send {
-    width: 50%;
   }
 }
