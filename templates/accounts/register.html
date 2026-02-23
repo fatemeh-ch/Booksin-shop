@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="fatemeh-code-official">
     <meta name="subject" content="book shop">
-    <meta name="keywords" content="book,book shop,bookshop,booksin">
+    <meta name="keywords" content="book,book shop,bookshop,booksin,sign up">
     <meta name="description" content="Booksin online book shop">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="{% static 'styles/basics.css' %}">
     <link rel="stylesheet" href="{% static 'styles/login.css' %}">
     <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/png">
-    <title>Login</title>
+    <title>Sign up</title>
 </head>
 
 <body>
-    <!-- Login container -->
+    <!-- Sign up container -->
     <div class="login_container d-flex column-flex align-items-center">
         <!-- Logo -->
         <div class="logo d-flex align-items-center">
@@ -40,21 +40,38 @@
         <h2 class="main_title">Sign up</h2>
         <!-- End of Main Title -->
 
-        <!-- Login form -->
-        <form action="#" class="login_form d-flex column-flex">
+        <!-- Sign up form -->
+        <form action="{% url 'accounts:register' %}" class="login_form d-flex column-flex" method="post">
+
+            {% csrf_token %}
+
             <label for="username"><i class="fa-regular fa-user form_icons"></i></label>
             <input type="text" id="username" name="username" placeholder="Enter uername..." class="form_inputs">
-            <label for="password"><i class="fa-solid fa-lock form_icons"></i></label>
-            <input type="password" name="password" id="password" placeholder="Enter password" class="form_inputs">
+
+            <label for="password1"><i class="fa-solid fa-lock form_icons"></i></label>
+            <input type="password" name="password1" id="password1" placeholder="Enter password" class="form_inputs">
+
+            <label for="password2"><i class="fa-solid fa-lock form_icons"></i></label>
+            <input type="password" name="password2" id="password2" placeholder="Confirm your password"
+                class="form_inputs">
+
+            <!-- Error showing -->
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <p style="color:red;">{{ error }}</p>
+                {% endfor %}
+            {% endfor %}
+
+
             <input type="submit" value="Send" class="submit_btn">
         </form>
-        <!-- End of Login form -->
+        <!-- End of Sign up form -->
 
         <!-- Log in -->
-         <a href="{% url 'accounts:login' %}" class="login_msg">Have account?login</a>
+        <a href="{% url 'accounts:login' %}" class="login_msg">Have account?login</a>
 
     </div>
-    <!-- End of Login container -->
+    <!-- End of Sign up container -->
 </body>
 
 </html>

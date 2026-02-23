@@ -42,14 +42,23 @@
 
         <!-- Login form -->
         <form action="{% url 'accounts:login' %}" class="login_form d-flex column-flex" method="post">
-            
+
             {% csrf_token %}
 
             <label for="username"><i class="fa-regular fa-user form_icons"></i></label>
             <input type="text" id="username" name="username" placeholder="Enter username..." class="form_inputs">
+
             <label for="password"><i class="fa-solid fa-lock form_icons"></i></label>
             <input type="password" name="password" id="password" placeholder="Enter password" class="form_inputs">
-            <input type="submit" value="Send" class="submit_btn">
+
+            <!-- Error showing -->
+            {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                    <p style="color:red;">{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+
+            <input type="submit" value="Submit" class="submit_btn">
         </form>
         <!-- End of Login form -->
 
