@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import AuthenticationForm
+from django.urls import reverse
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
@@ -18,15 +19,30 @@ def login_view(request):
                 if user is not None:
                     login(request, user)
                     return redirect('/')
-        form = AuthenticationForm()
+        else:
+            form = AuthenticationForm()
         context = {'form': form}
         return render(request, 'accounts/login.html', context)
     else:
         return redirect('/')
 
 
+# Registering a new user View
 def register_view(request):
-    return render(request, 'accounts/register.html')
+
+    if not request.user.is_authenticated:
+        if request.method == 'POST':
+            form = UserCreationForm(request.POST)
+            if form.is_valid():
+                user = form.save()
+                login(request, user)
+                return redirect('/')
+        else:
+            form = UserCreationForm()
+        context = {'form': form}
+        return render(request, 'accounts/register.html', context)
+    else:
+        return redirect('/')
 
 
 @login_required
